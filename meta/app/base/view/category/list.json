@@ -1,0 +1,31 @@
+{
+  "label": "List",
+  "description": "Default list",
+  "order": {
+    "orderNumber": 1
+  },
+  "attrs": [
+    {
+      "name": "name",
+      "orderNumber": 10
+    },
+    {
+      "name": "description",
+      "orderNumber": 20
+    },
+    {
+      "name": "orderNumber",
+      "orderNumber": 30
+    },
+    {
+      "name": "parent",
+      "eagerLoading": true,
+      "orderNumber": 40
+    },
+    {
+      "name": "icon",
+      "orderNumber": 50,
+      "viewType": "thumbnail"
+    }
+  ]
+}

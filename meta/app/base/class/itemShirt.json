@@ -1,0 +1,89 @@
+{
+  "abstract": false,
+  "description": "Garment for the upper body made of cotton or a similar fabric",
+  "label": "Shirt",
+  "parent": "item",
+  "attrs": [
+    {
+      "name": "color",
+      "label": "Color",
+      "type": "string",
+      "viewType": "select",
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "options",
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 130,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false,
+      "enums": [
+        {
+          "items": [
+            {
+              "value": "Blue"
+            },
+            {
+              "value": "Green"
+            },
+            {
+              "value": "Orange"
+            },
+            {
+              "value": "Red"
+            },
+            {
+              "value": "Yellow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "size",
+      "label": "Size",
+      "type": "string",
+      "viewType": "radioList",
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "options",
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 140,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false,
+      "enums": [
+        {
+          "items": [
+            {
+              "value": "S"
+            },
+            {
+              "value": "M"
+            },
+            {
+              "value": "L"
+            },
+            {
+              "value": "XL"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

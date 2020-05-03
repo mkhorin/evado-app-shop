@@ -1,0 +1,244 @@
+[
+  {
+    "_id": {
+      "$oid": "5e87ca35750cca1ac8020c01"
+    },
+    "_class": "category",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "name": "Clothes",
+    "description": "Lorem ipsum dolor sit amet consectetuer id tempus In id condimentum",
+    "orderNumber": 10,
+    "parent": null,
+    "clipart": null,
+    "_createdAt": {
+      "$date": "2020-04-03T23:43:49.569Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-05T02:34:46.700Z"
+    },
+    "icon": {
+      "$oid": "5e89332fe0d4991d904563c7"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e87ca63750cca1ac8020c02"
+    },
+    "_class": "category",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "name": "Vehicles",
+    "description": "Id ac orci sapien lobortis Nullam ipsum eros nec penatibus aliquam",
+    "orderNumber": 30,
+    "parent": null,
+    "clipart": null,
+    "_createdAt": {
+      "$date": "2020-04-03T23:44:35.103Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-05T03:47:09.238Z"
+    },
+    "icon": {
+      "$oid": "5e8930ace0d4991d904563c4"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e87caa9750cca1ac8020c03"
+    },
+    "_class": "category",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "name": "Electronics",
+    "description": "Cursus et hendrerit ridiculus interdum eget porttitor dictum justo nonummy Curabitur",
+    "orderNumber": 20,
+    "parent": null,
+    "clipart": null,
+    "_createdAt": {
+      "$date": "2020-04-03T23:45:45.362Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-05T02:37:52.559Z"
+    },
+    "icon": {
+      "$oid": "5e893338e0d4991d904563ca"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e87d0f6a95a711968b2569c"
+    },
+    "_class": "category",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "orderNumber": 40,
+    "name": "Coats",
+    "description": "Cursus congue ac dictumst orci cursus mi ligula velit dui pellentesque",
+    "clipart": null,
+    "parent": {
+      "$oid": "5e87ca35750cca1ac8020c01"
+    },
+    "_createdAt": {
+      "$date": "2020-04-04T00:12:38.006Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-05T03:47:22.303Z"
+    },
+    "icon": {
+      "$oid": "5e892ffce0d4991d904563af"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e87d124a95a711968b2569e"
+    },
+    "_class": "category",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "orderNumber": 60,
+    "name": "Shirts",
+    "description": "Fringilla cursus lorem et est et condimentum neque justo felis lacus",
+    "clipart": null,
+    "parent": {
+      "$oid": "5e87ca35750cca1ac8020c01"
+    },
+    "_createdAt": {
+      "$date": "2020-04-04T00:13:24.202Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-05T03:48:05.028Z"
+    },
+    "icon": {
+      "$oid": "5e89309ee0d4991d904563be"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e89598b25f3bc22c4c52b63"
+    },
+    "_class": "category",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "orderNumber": 70,
+    "name": "Motorcycles",
+    "description": "Id arcu felis auctor Suspendisse sed auctor tempus wisi habitant urna",
+    "icon": {
+      "$oid": "5e893075e0d4991d904563bb"
+    },
+    "parent": {
+      "$oid": "5e87ca63750cca1ac8020c02"
+    },
+    "_createdAt": {
+      "$date": "2020-04-05T04:07:39.034Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T23:59:13.454Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8959b125f3bc22c4c52b64"
+    },
+    "_class": "category",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "orderNumber": 80,
+    "name": "Trucks",
+    "description": "Suscipit mus leo vitae interdum aliquam et auctor odio Curabitur egestas",
+    "icon": {
+      "$oid": "5e8930a5e0d4991d904563c1"
+    },
+    "parent": {
+      "$oid": "5e87ca63750cca1ac8020c02"
+    },
+    "_createdAt": {
+      "$date": "2020-04-05T04:08:17.650Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T06:53:16.623Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e895a1f25f3bc22c4c52b66"
+    },
+    "_class": "category",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "orderNumber": 90,
+    "name": "Kettles",
+    "description": "Aenean egestas ultrices risus nisl lacinia sit enim dui urna Maecenas",
+    "icon": {
+      "$oid": "5e893061e0d4991d904563b8"
+    },
+    "parent": {
+      "$oid": "5e87caa9750cca1ac8020c03"
+    },
+    "_createdAt": {
+      "$date": "2020-04-05T04:10:07.316Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T06:53:21.808Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e895a5925f3bc22c4c52b67"
+    },
+    "_class": "category",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "orderNumber": 100,
+    "name": "Hairdryers",
+    "description": "Duis Vestibulum tincidunt eu pellentesque Aliquam nisl convallis interdum id id. Montes",
+    "icon": {
+      "$oid": "5e893009e0d4991d904563b2"
+    },
+    "parent": {
+      "$oid": "5e87caa9750cca1ac8020c03"
+    },
+    "_createdAt": {
+      "$date": "2020-04-05T04:11:05.925Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T06:53:27.989Z"
+    }
+  }
+]

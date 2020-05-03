@@ -1,0 +1,60 @@
+{
+  "label": "Public view",
+  "description": "Item for front",
+  "filter": {
+    "active": true
+  },
+  "attrs": [
+    {
+      "name": "_class",
+      "orderNumber": 10
+    },
+    {
+      "name": "name",
+      "orderNumber": 30
+    },
+    {
+      "name": "description",
+      "orderNumber": 40
+    },
+    {
+      "name": "brief",
+      "orderNumber": 40
+    },
+    {
+      "name": "category",
+      "eagerLoading": true,
+      "eagerView": "publicView",
+      "orderNumber": 50
+    },
+    {
+      "name": "inStock",
+      "orderNumber": 60
+    },
+    {
+      "name": "price",
+      "orderNumber": 70
+    },
+    {
+      "name": "photos",
+      "eagerLoading": true,
+      "orderNumber": 70
+    },
+    {
+      "name": "slaves",
+      "eagerDepth": 2,
+      "eagerLoading": true,
+      "eagerView": "publicView",
+      "orderNumber": 120,
+      "selectListView": "publicView"
+    },
+    {
+      "name": "volume",
+      "orderNumber": 130
+    },
+    {
+      "name": "power",
+      "orderNumber": 140
+    }
+  ]
+}

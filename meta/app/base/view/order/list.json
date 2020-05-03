@@ -1,0 +1,34 @@
+{
+  "label": "List",
+  "description": "Default list",
+  "attrs": [
+    {
+      "name": "customer",
+      "orderNumber": 10
+    },
+    {
+      "name": "agreed",
+      "orderNumber": 20
+    },
+    {
+      "name": "paid",
+      "orderNumber": 30
+    },
+    {
+      "name": "shipped",
+      "orderNumber": 40
+    },
+    {
+      "name": "cancelled",
+      "orderNumber": 50
+    },
+    {
+      "name": "totalPrice",
+      "orderNumber": 70
+    },
+    {
+      "name": "_createdAt",
+      "orderNumber": 80
+    }
+  ]
+}

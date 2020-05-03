@@ -1,0 +1,67 @@
+
+<div class="page" data-page="orders" data-handler="OrdersPage">
+
+    <div class="page-head">
+        <ol class="breadcrumb">
+            <li><a href="#" data-action="main" data-t="">Main</a></li>
+            <li data-t="">Orders</li>
+        </ol>
+        <%- include('./_cartToggle') %>
+        <%- include('./_user') %>
+    </div>
+
+    <h1 data-t="">Orders</h1>
+
+    <div class="order-list loadable-container" data-handler="OrderList">
+
+        <div class="loadable-content"></div>
+        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+
+        <template data-id="list">
+            <div class="order-items">{{items}}</div>
+        </template>
+
+        <template data-id="item">
+            <div class="order-item row-item" data-id="{{_id}}">
+                <div class="order-item-id cell">
+                    <label data-t="">Order number</label>
+                    <div class="value">
+                        <a href="#" data-action="detail" title="{{_id}}">#{{_id}}</a>
+                    </div>
+                </div>
+                <div class="order-item-agreed cell">
+                    <label data-t="">Agreed</label>
+                    <div class="value">{{agreed}}</div>
+                </div>
+                <div class="order-item-paid cell">
+                    <label data-t="">Paid</label>
+                    <div class="value">{{paid}}</div>
+                </div>
+                <div class="order-item-shipped cell">
+                    <label data-t="">Shipped</label>
+                    <div class="value">{{shipped}}</div>
+                </div>
+                <div class="order-item-cancelled cell">
+                    <label data-t="">Cancelled</label>
+                    <div class="value">{{cancelled}}</div>
+                </div>
+                <div class="order-item-date cell">
+                    <label data-t="">Created at</label>
+                    <div class="value">{{date}}</div>
+                </div>
+            </div>
+        </template>
+
+        <%- include('./_pagination') %>
+
+        <template data-id="empty">
+            <div class="alert-warning alert">
+                <span data-t="">You have no orders</span>
+            </div>
+        </template>
+
+        <template data-id="error">
+            <div class="alert-danger alert">{{text}}</div>
+        </template>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+
+<div class="page" data-page="category" data-handler="CategoryPage">
+
+    <div class="category loadable-container" data-handler="Category">
+
+        <div class="loadable-content"></div>
+        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+
+        <template data-id="category">
+
+            <div class="page-head">
+                <ol class="breadcrumb">
+                    <li><a href="#" data-action="main" data-t="">Main</a></li>
+                    {{parent}}
+                    <li data-t="">{{name}}</li>
+                </ol>
+                <%- include('./_cartToggle') %>
+                <%- include('./_user') %>
+            </div>
+
+            <h1>
+                <span data-t="">{{name}}</span>
+                <span data-t="">category</span>
+            </h1>
+
+            <h4 class="subtitle">{{description}}</h4>
+
+            {{subcategories}}
+            {{alert}}
+            {{items}}
+
+        </template>
+
+        <template data-id="parent">
+            <li><a href="#" data-action="category" data-id="{{parent}}">Parent</a></li>
+        </template>
+
+        <template data-id="subcategories">
+            <div class="subcategories">
+                <h3 data-t="">Subcategories</h3>
+                <div class="row">{{subcategories}}</div>
+            </div>
+        </template>
+
+        <template data-id="subcategory">
+            <div class="col-sm-3 col-lg-2">
+                <div class="category-card" data-id="{{_id}}">
+                    <a href="#" data-action="category">
+                        <img data-src="<%- _url('/api/base/file/download') %>?v=.clipart&id={{icon}}"
+                             class="thumbnail img-responsive" alt="{{description}}">
+                    </a>
+                    <h4><a href="#" data-action="category">{{name}}</a></h4>
+                </div>
+            </div>
+        </template>
+
+        <template data-id="items">
+            <div class="item-list loadable-container" data-handler="CategoryItemList">
+
+                <h3 data-t="">Items</h3>
+
+                <form class="search-form" data-handler="Search">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+
+                <div class="loadable-content"></div>
+                <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+
+                <template data-id="list">
+                    <div class="row">{{items}}</div>
+                </template>
+
+                <template data-id="error">
+                    <div class="alert-danger alert">{{text}}</div>
+                </template>
+
+                <%- include('./_itemCard') %>
+                <%- include('./_pagination') %>
+            </div>
+        </template>
+
+        <template data-id="error">
+            <div class="alert-danger alert">{{text}}</div>
+        </template>
+    </div>
+</div>

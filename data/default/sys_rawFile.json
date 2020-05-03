@@ -1,0 +1,560 @@
+[
+  {
+    "_id": {
+      "$oid": "5e892fd0e0d4991d904563a9"
+    },
+    "name": "car.svg",
+    "mime": "image/svg+xml",
+    "size": 2021,
+    "file": "2020-04/5e892fd0e0d4991d904563a8",
+    "createdAt": {
+      "$date": "2020-04-05T01:09:36.724Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e892e31e0d4991d904563a5"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e892ff2e0d4991d904563ab"
+    },
+    "name": "clock.svg",
+    "mime": "image/svg+xml",
+    "size": 4311,
+    "file": "2020-04/5e892ff2e0d4991d904563aa",
+    "createdAt": {
+      "$date": "2020-04-05T01:10:10.934Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e892ff5e0d4991d904563ac"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e892ffae0d4991d904563ae"
+    },
+    "name": "coat.svg",
+    "mime": "image/svg+xml",
+    "size": 5043,
+    "file": "2020-04/5e892ffae0d4991d904563ad",
+    "createdAt": {
+      "$date": "2020-04-05T01:10:18.895Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e892ffce0d4991d904563af"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e893007e0d4991d904563b1"
+    },
+    "name": "hairdryer.svg",
+    "mime": "image/svg+xml",
+    "size": 7548,
+    "file": "2020-04/5e893007e0d4991d904563b0",
+    "createdAt": {
+      "$date": "2020-04-05T01:10:31.976Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e893009e0d4991d904563b2"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e893012e0d4991d904563b4"
+    },
+    "name": "hat.svg",
+    "mime": "image/svg+xml",
+    "size": 2540,
+    "file": "2020-04/5e893012e0d4991d904563b3",
+    "createdAt": {
+      "$date": "2020-04-05T01:10:42.554Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e893015e0d4991d904563b5"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e89305fe0d4991d904563b7"
+    },
+    "name": "kettle.svg",
+    "mime": "image/svg+xml",
+    "size": 3037,
+    "file": "2020-04/5e89305fe0d4991d904563b6",
+    "createdAt": {
+      "$date": "2020-04-05T01:11:59.463Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e893061e0d4991d904563b8"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e893069e0d4991d904563ba"
+    },
+    "name": "moto.svg",
+    "mime": "image/svg+xml",
+    "size": 11674,
+    "file": "2020-04/5e893069e0d4991d904563b9",
+    "createdAt": {
+      "$date": "2020-04-05T01:12:09.936Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e893075e0d4991d904563bb"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e89309de0d4991d904563bd"
+    },
+    "name": "shirt.svg",
+    "mime": "image/svg+xml",
+    "size": 2153,
+    "file": "2020-04/5e89309de0d4991d904563bc",
+    "createdAt": {
+      "$date": "2020-04-05T01:13:01.038Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e89309ee0d4991d904563be"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8930a4e0d4991d904563c0"
+    },
+    "name": "truck.svg",
+    "mime": "image/svg+xml",
+    "size": 2523,
+    "file": "2020-04/5e8930a4e0d4991d904563bf",
+    "createdAt": {
+      "$date": "2020-04-05T01:13:08.224Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8930a5e0d4991d904563c1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8930aae0d4991d904563c3"
+    },
+    "name": "vehicle.svg",
+    "mime": "image/svg+xml",
+    "size": 4623,
+    "file": "2020-04/5e8930aae0d4991d904563c2",
+    "createdAt": {
+      "$date": "2020-04-05T01:13:14.526Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8930ace0d4991d904563c4"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e89332de0d4991d904563c6"
+    },
+    "name": "clothes.svg",
+    "mime": "image/svg+xml",
+    "size": 2648,
+    "file": "2020-04/5e89332de0d4991d904563c5",
+    "createdAt": {
+      "$date": "2020-04-05T01:23:57.896Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e89332fe0d4991d904563c7"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e893334e0d4991d904563c9"
+    },
+    "name": "electronics.svg",
+    "mime": "image/svg+xml",
+    "size": 2343,
+    "file": "2020-04/5e893334e0d4991d904563c8",
+    "createdAt": {
+      "$date": "2020-04-05T01:24:04.893Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e893338e0d4991d904563ca"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8abd2e8c87622134b1217e"
+    },
+    "name": "shirt-casual-red-01.jpg",
+    "mime": "image/jpeg",
+    "size": 10912,
+    "file": "2020-04/5e8abd2e8c87622134b1217d",
+    "createdAt": {
+      "$date": "2020-04-06T05:25:02.772Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8abd458c87622134b1217f"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8ac75884acee1a9809d3b9"
+    },
+    "name": "shirt-casual-blue-01.jpg",
+    "mime": "image/jpeg",
+    "size": 11488,
+    "file": "2020-04/5e8ac75884acee1a9809d3b8",
+    "createdAt": {
+      "$date": "2020-04-06T06:08:24.746Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8ac75a84acee1a9809d3ba"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8ac88784acee1a9809d3bd"
+    },
+    "name": "shirt-casual-01.jpg",
+    "mime": "image/jpeg",
+    "size": 12288,
+    "file": "2020-04/5e8ac88784acee1a9809d3bc",
+    "createdAt": {
+      "$date": "2020-04-06T06:13:27.604Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8ac89084acee1a9809d3be"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8acb9684acee1a9809d3c2"
+    },
+    "name": "shirt-office-01.jpg",
+    "mime": "image/jpeg",
+    "size": 10022,
+    "file": "2020-04/5e8acb9684acee1a9809d3c1",
+    "createdAt": {
+      "$date": "2020-04-06T06:26:30.975Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8acba084acee1a9809d3c3"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8acba684acee1a9809d3c5"
+    },
+    "name": "shirt-office-blue-01.jpg",
+    "mime": "image/jpeg",
+    "size": 11545,
+    "file": "2020-04/5e8acba684acee1a9809d3c4",
+    "createdAt": {
+      "$date": "2020-04-06T06:26:46.306Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8acbad84acee1a9809d3c6"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8acbb284acee1a9809d3c8"
+    },
+    "name": "shirt-office-green-01.jpg",
+    "mime": "image/jpeg",
+    "size": 11526,
+    "file": "2020-04/5e8acbb284acee1a9809d3c7",
+    "createdAt": {
+      "$date": "2020-04-06T06:26:58.943Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8acbbb84acee1a9809d3c9"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8ad00e84acee1a9809d3ce"
+    },
+    "name": "shirt-sport-green-01.jpg",
+    "mime": "image/jpeg",
+    "size": 9089,
+    "file": "2020-04/5e8ad00e84acee1a9809d3cd",
+    "createdAt": {
+      "$date": "2020-04-06T06:45:34.604Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8ad04484acee1a9809d3cf"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8ad04d84acee1a9809d3d1"
+    },
+    "name": "shirt-sport-yellow-01.jpg",
+    "mime": "image/jpeg",
+    "size": 9155,
+    "file": "2020-04/5e8ad04d84acee1a9809d3d0",
+    "createdAt": {
+      "$date": "2020-04-06T06:46:37.424Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8ad06784acee1a9809d3d2"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8ade130ad55f0c3ca55ae9"
+    },
+    "name": "kettle-01.jpg",
+    "mime": "image/jpeg",
+    "size": 11262,
+    "file": "2020-04/5e8ade130ad55f0c3ca55ae8",
+    "createdAt": {
+      "$date": "2020-04-06T07:45:23.977Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8ade1f0ad55f0c3ca55aea"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8ae48e0ad55f0c3ca55b23"
+    },
+    "name": "kettle-02.jpg",
+    "mime": "image/jpeg",
+    "size": 8710,
+    "file": "2020-04/5e8ae48e0ad55f0c3ca55b22",
+    "createdAt": {
+      "$date": "2020-04-06T08:13:02.712Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8ae4f30ad55f0c3ca55b24"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8aee3fa9131b1970d25f81"
+    },
+    "name": "kettle-04.jpg",
+    "mime": "image/jpeg",
+    "size": 13184,
+    "file": "2020-04/5e8aee3fa9131b1970d25f80",
+    "createdAt": {
+      "$date": "2020-04-06T08:54:23.602Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8aee6da9131b1970d25f82"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bbe3885419b19049a54e1"
+    },
+    "name": "coat-winter.jpg",
+    "mime": "image/jpeg",
+    "size": 11457,
+    "file": "2020-04/5e8bbe3885419b19049a54e0",
+    "createdAt": {
+      "$date": "2020-04-06T23:41:44.965Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8bbe4185419b19049a54e2"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bbe4b85419b19049a54e4"
+    },
+    "name": "coat-winter-blue-01.jpg",
+    "mime": "image/jpeg",
+    "size": 12217,
+    "file": "2020-04/5e8bbe4b85419b19049a54e3",
+    "createdAt": {
+      "$date": "2020-04-06T23:42:03.802Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8bbe5385419b19049a54e5"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bbe5a85419b19049a54e7"
+    },
+    "name": "coat-winter-red-01.jpg",
+    "mime": "image/jpeg",
+    "size": 12367,
+    "file": "2020-04/5e8bbe5a85419b19049a54e6",
+    "createdAt": {
+      "$date": "2020-04-06T23:42:18.657Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8bbe6385419b19049a54e8"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bc0c785419b19049a54ef"
+    },
+    "name": "coat-autumn-yellow-01.jpg",
+    "mime": "image/jpeg",
+    "size": 12558,
+    "file": "2020-04/5e8bc0c785419b19049a54ee",
+    "createdAt": {
+      "$date": "2020-04-06T23:52:39.321Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8bc0cd85419b19049a54f0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bd31185419b19049a5594"
+    },
+    "name": "moto-01.jpg",
+    "mime": "image/jpeg",
+    "size": 13678,
+    "file": "2020-04/5e8bd31185419b19049a5593",
+    "createdAt": {
+      "$date": "2020-04-07T01:10:41.652Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8bd31985419b19049a5595"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bd64c01733d1ef02418d6"
+    },
+    "name": "moto-03.jpg",
+    "mime": "image/jpeg",
+    "size": 13259,
+    "file": "2020-04/5e8bd64c01733d1ef02418d5",
+    "createdAt": {
+      "$date": "2020-04-07T01:24:28.135Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8bd69401733d1ef02418d7"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bd79a01733d1ef02418da"
+    },
+    "name": "truck-03.jpg",
+    "mime": "image/jpeg",
+    "size": 10253,
+    "file": "2020-04/5e8bd79a01733d1ef02418d9",
+    "createdAt": {
+      "$date": "2020-04-07T01:30:02.124Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8bd79e01733d1ef02418db"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bd90101733d1ef02418e0"
+    },
+    "name": "truck-01.jpg",
+    "mime": "image/jpeg",
+    "size": 16804,
+    "file": "2020-04/5e8bd90101733d1ef02418df",
+    "createdAt": {
+      "$date": "2020-04-07T01:36:01.468Z"
+    },
+    "creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "owner": {
+      "$oid": "5e8bd90b01733d1ef02418e1"
+    }
+  }
+]

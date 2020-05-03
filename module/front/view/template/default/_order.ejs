@@ -1,0 +1,108 @@
+
+<div class="page" data-page="order" data-handler="OrderPage">
+
+    <div class="order loadable-container" data-handler="Order">
+
+        <div class="loadable-content"></div>
+        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+
+        <template data-id="order">
+            <div class="page-head">
+                <ol class="breadcrumb">
+                    <li><a href="#" data-action="main" data-t="">Main</a></li>
+                    <li><a href="#" data-action="orders" data-t="">Orders</a></li>
+                    <li data-t="">#{{_id}}</li>
+                </ol>
+                <%- include('./_cartToggle') %>
+                <%- include('./_user') %>
+            </div>
+
+            <h1>
+                <span data-t="">Order</span>
+                #{{_id}}
+            </h1>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-horizontal form">
+                        <div class="form-group">
+                            <label class="col-xs-4 control-label" data-t="">Agreed</label>
+                            <div class="col-xs-8">
+                                <div class="form-control-static">{{agreed}}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-4 control-label" data-t="">Paid</label>
+                            <div class="col-xs-8">
+                                <div class="form-control-static">{{paid}}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-4 control-label" data-t="">Shipped</label>
+                            <div class="col-xs-8">
+                                <div class="form-control-static">{{shipped}}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-4 control-label" data-t="">Created at</label>
+                            <div class="col-xs-8">
+                                <div class="form-control-static">{{date}}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-4 control-label" data-t="">Total price</label>
+                            <div class="col-xs-8">
+                                <div class="form-control-static"><b>{{total}}</b></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-offset-4 col-xs-8">
+                                {{deletion}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="item-list">
+                        {{items}}
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template data-id="item">
+            <div class="row-item" data-id="{{id}}">
+                <div class="cell">
+                    <a href="#" data-action="item" title="{{name}}">
+                        <img src="<%- _url('/api/base/file/thumbnail') %>?s=tiny&v=.photo&id={{photo}}"
+                             class="img-responsive thumbnail" alt="">
+                    </a>
+                </div>
+                <div class="cell">
+                    <label data-t="">Name</label>
+                    <div class="value">
+                        <a href="#" data-action="item" title="{{name}}">{{name}}</a>
+                    </div>
+                </div>
+                <div class="cell">
+                    <label data-t="">Quantity</label>
+                    <div class="value">{{qty}}</div>
+                </div>
+                <div class="cell">
+                    <label data-t="">Price</label>
+                    <div class="value">{{price}}</div>
+                </div>
+            </div>
+        </template>
+
+        <template data-id="deletion">
+            <button class="btn-danger btn" type="button" data-action="deleteOrder">
+                <span data-t="">Delete order</span>
+            </button>
+        </template>
+
+        <template data-id="error">
+            <div class="alert-danger alert">{{text}}</div>
+        </template>
+    </div>
+</div>

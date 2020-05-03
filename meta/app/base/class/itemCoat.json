@@ -1,0 +1,86 @@
+{
+  "abstract": false,
+  "description": "An outer garment worn outdoors",
+  "label": "Coat",
+  "parent": "item",
+  "attrs": [
+    {
+      "name": "fabric",
+      "label": "Fabric",
+      "type": "string",
+      "viewType": "select",
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "options",
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 130,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false,
+      "enums": [
+        {
+          "items": [
+            {
+              "value": "Cashmere"
+            },
+            {
+              "value": "Fleece"
+            },
+            {
+              "value": "Tweed"
+            },
+            {
+              "value": "Wool"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "size",
+      "label": "Size",
+      "type": "string",
+      "viewType": "radioList",
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "options",
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 140,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false,
+      "enums": [
+        {
+          "items": [
+            {
+              "value": "S"
+            },
+            {
+              "value": "M"
+            },
+            {
+              "value": "L"
+            },
+            {
+              "value": "XL"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

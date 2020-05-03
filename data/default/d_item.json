@@ -1,0 +1,998 @@
+[
+  {
+    "_id": {
+      "$oid": "5e8ac6de84acee1a9809d3b7"
+    },
+    "_class": "itemShirt",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Red casual shirt",
+    "brief": "Fringilla In fringilla eu nibh habitant felis facilisis Vivamus lacus at",
+    "description": "Elit wisi Phasellus lacus pede quis pede wisi Ut Nam Suspendisse. Dui diam lorem volutpat Cum neque dolor at suscipit auctor leo. Fringilla tortor tortor Integer eu Maecenas Pellentesque elit eros venenatis dui. Laoreet a in ipsum tincidunt Nulla molestie Nam orci dictumst Nulla.",
+    "category": {
+      "$oid": "5e87d124a95a711968b2569e"
+    },
+    "inStock": 45,
+    "price": 25,
+    "mainPhoto": {
+      "$oid": "5e8abd458c87622134b1217f"
+    },
+    "photos": [
+      {
+        "$oid": "5e8abd458c87622134b1217f"
+      }
+    ],
+    "master": {
+      "$oid": "5e8ac8dc84acee1a9809d3bf"
+    },
+    "color": "Red",
+    "size": "M",
+    "_createdAt": {
+      "$date": "2020-04-06T06:06:22.180Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T06:15:17.991Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8ac7ab84acee1a9809d3bb"
+    },
+    "_class": "itemShirt",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Blue casual shirt",
+    "brief": "Fringilla In fringilla eu nibh habitant felis facilisis Vivamus lacus at",
+    "description": "Elit wisi Phasellus lacus pede quis pede wisi Ut Nam Suspendisse. Dui diam lorem volutpat Cum neque dolor at suscipit auctor leo. Fringilla tortor tortor Integer eu Maecenas Pellentesque elit eros venenatis dui. Laoreet a in ipsum tincidunt Nulla molestie Nam orci dictumst Nulla.",
+    "category": {
+      "$oid": "5e87d124a95a711968b2569e"
+    },
+    "inStock": 20,
+    "price": 40,
+    "mainPhoto": {
+      "$oid": "5e8ac75a84acee1a9809d3ba"
+    },
+    "photos": [
+      {
+        "$oid": "5e8ac75a84acee1a9809d3ba"
+      }
+    ],
+    "master": {
+      "$oid": "5e8ac8dc84acee1a9809d3bf"
+    },
+    "color": "Blue",
+    "size": "M",
+    "_createdAt": {
+      "$date": "2020-04-06T06:09:47.548Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T06:14:59.169Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8ac8dc84acee1a9809d3bf"
+    },
+    "_class": "itemShirt",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Casual shirt",
+    "brief": "Fringilla In fringilla eu nibh habitant felis facilisis Vivamus lacus at",
+    "description": "Elit wisi Phasellus lacus pede quis pede wisi Ut Nam Suspendisse. Dui diam lorem volutpat Cum neque dolor at suscipit auctor leo. Fringilla tortor tortor Integer eu Maecenas Pellentesque elit eros venenatis dui. Laoreet a in ipsum tincidunt Nulla molestie Nam orci dictumst Nulla.",
+    "category": {
+      "$oid": "5e87d124a95a711968b2569e"
+    },
+    "inStock": 0,
+    "price": 25,
+    "mainPhoto": {
+      "$oid": "5e8ac89084acee1a9809d3be"
+    },
+    "photos": [
+      {
+        "$oid": "5e8ac89084acee1a9809d3be"
+      },
+      {
+        "$oid": "5e8abd458c87622134b1217f"
+      },
+      {
+        "$oid": "5e8ac75a84acee1a9809d3ba"
+      }
+    ],
+    "master": null,
+    "color": "Blue",
+    "size": "M",
+    "_createdAt": {
+      "$date": "2020-04-06T06:14:52.258Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T06:39:07.484Z"
+    },
+    "_sort": [
+      "photos"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "5e8acb2884acee1a9809d3c0"
+    },
+    "_class": "itemShirt",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Office shirt",
+    "brief": "Lorem ipsum dolor sit amet consectetuer risus dolor",
+    "description": "Consequat Morbi ipsum rutrum tortor lacus lacus a purus Donec hac. Ac Aenean justo quis et facilisi quis Sed quis pellentesque Curabitur.",
+    "category": {
+      "$oid": "5e87d124a95a711968b2569e"
+    },
+    "inStock": 0,
+    "price": 24,
+    "mainPhoto": {
+      "$oid": "5e8acba084acee1a9809d3c3"
+    },
+    "photos": [
+      {
+        "$oid": "5e8acba084acee1a9809d3c3"
+      },
+      {
+        "$oid": "5e8acbad84acee1a9809d3c6"
+      },
+      {
+        "$oid": "5e8acbbb84acee1a9809d3c9"
+      }
+    ],
+    "master": null,
+    "color": "Blue",
+    "size": "XL",
+    "_createdAt": {
+      "$date": "2020-04-06T06:24:40.599Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T06:51:50.950Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8acddb84acee1a9809d3ca"
+    },
+    "_class": "itemShirt",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Blue office shirt",
+    "brief": "Lorem ipsum dolor sit amet consectetuer risus dolor",
+    "description": "Consequat Morbi ipsum rutrum tortor lacus lacus a purus Donec hac. Ac Aenean justo quis et facilisi quis Sed quis pellentesque Curabitur.",
+    "category": {
+      "$oid": "5e87d124a95a711968b2569e"
+    },
+    "inStock": 14,
+    "price": 24,
+    "mainPhoto": {
+      "$oid": "5e8acbad84acee1a9809d3c6"
+    },
+    "photos": [
+      {
+        "$oid": "5e8acbad84acee1a9809d3c6"
+      }
+    ],
+    "master": {
+      "$oid": "5e8acb2884acee1a9809d3c0"
+    },
+    "color": "Blue",
+    "size": "XL",
+    "_createdAt": {
+      "$date": "2020-04-06T06:36:11.224Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T06:37:28.084Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8ace1e84acee1a9809d3cb"
+    },
+    "_class": "itemShirt",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Green office shirt",
+    "brief": "Lorem ipsum dolor sit amet consectetuer risus dolor",
+    "description": "Consequat Morbi ipsum rutrum tortor lacus lacus a purus Donec hac. Ac Aenean justo quis et facilisi quis Sed quis pellentesque Curabitur.",
+    "category": {
+      "$oid": "5e87d124a95a711968b2569e"
+    },
+    "inStock": 18,
+    "price": 28,
+    "mainPhoto": {
+      "$oid": "5e8acbbb84acee1a9809d3c9"
+    },
+    "photos": [
+      {
+        "$oid": "5e8acbbb84acee1a9809d3c9"
+      }
+    ],
+    "master": {
+      "$oid": "5e8acb2884acee1a9809d3c0"
+    },
+    "color": "Green",
+    "size": "M",
+    "_createdAt": {
+      "$date": "2020-04-06T06:37:18.117Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8acf1f84acee1a9809d3cc"
+    },
+    "_class": "itemShirt",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Emerald sport shirt",
+    "brief": "Leo condimentum consequat et ipsum id eu id eget",
+    "description": "Consequat Morbi ipsum rutrum tortor lacus lacus a purus Donec hac. Ac Aenean justo quis et facilisi quis Sed quis pellentesque Curabitur.",
+    "category": {
+      "$oid": "5e87d124a95a711968b2569e"
+    },
+    "inStock": 16,
+    "price": 36,
+    "mainPhoto": {
+      "$oid": "5e8ad04484acee1a9809d3cf"
+    },
+    "photos": [
+      {
+        "$oid": "5e8ad04484acee1a9809d3cf"
+      }
+    ],
+    "master": null,
+    "color": "Green",
+    "size": "L",
+    "_createdAt": {
+      "$date": "2020-04-06T06:41:35.141Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T06:51:09.377Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8ad0f384acee1a9809d3d3"
+    },
+    "_class": "itemShirt",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Orange sport shirt",
+    "brief": "Ac Aenean justo quis et facilisi quis Sed quis pellentesque Curabitur",
+    "description": "Consequat Morbi ipsum rutrum tortor lacus lacus a purus Donec hac. Ac Aenean justo quis et facilisi quis Sed quis pellentesque Curabitur.",
+    "category": {
+      "$oid": "5e87d124a95a711968b2569e"
+    },
+    "inStock": 10,
+    "price": 30,
+    "mainPhoto": {
+      "$oid": "5e8ad06784acee1a9809d3d2"
+    },
+    "photos": [
+      {
+        "$oid": "5e8ad06784acee1a9809d3d2"
+      }
+    ],
+    "master": null,
+    "color": "Green",
+    "size": "L",
+    "_createdAt": {
+      "$date": "2020-04-06T06:49:23.162Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T06:51:15.280Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8ae3d00ad55f0c3ca55b1f"
+    },
+    "_class": "itemHairdryer",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Sun wind hairdryer",
+    "brief": "Mauris Phasellus id consectetuer Vestibulum pretium risus sollicitudin",
+    "description": "Sodales quis enim fringilla cursus Fusce Aliquam sagittis id venenatis consequat. Suspendisse semper hendrerit aliquet risus dictumst condimentum ipsum.",
+    "category": {
+      "$oid": "5e895a5925f3bc22c4c52b67"
+    },
+    "inStock": 15,
+    "price": 85,
+    "mainPhoto": {
+      "$oid": "5e8ade1f0ad55f0c3ca55aea"
+    },
+    "photos": [
+      {
+        "$oid": "5e8ade1f0ad55f0c3ca55aea"
+      }
+    ],
+    "master": null,
+    "power": 100,
+    "_createdAt": {
+      "$date": "2020-04-06T08:09:52.687Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8ae3e50ad55f0c3ca55b20"
+    },
+    "_class": "itemHairdryer",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Sun wind hairdryer",
+    "brief": "Mauris Phasellus id consectetuer Vestibulum pretium risus sollicitudin",
+    "description": "Sodales quis enim fringilla cursus Fusce Aliquam sagittis id venenatis consequat. Suspendisse semper hendrerit aliquet risus dictumst condimentum ipsum.",
+    "category": {
+      "$oid": "5e895a5925f3bc22c4c52b67"
+    },
+    "inStock": 10,
+    "price": 120,
+    "mainPhoto": {
+      "$oid": "5e8ade1f0ad55f0c3ca55aea"
+    },
+    "photos": [
+      {
+        "$oid": "5e8ade1f0ad55f0c3ca55aea"
+      }
+    ],
+    "master": null,
+    "power": 150,
+    "_createdAt": {
+      "$date": "2020-04-06T08:10:13.264Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8ae4110ad55f0c3ca55b21"
+    },
+    "_class": "itemHairdryer",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Sun wind hairdryer",
+    "brief": "Mauris Phasellus id consectetuer Vestibulum pretium risus sollicitudin",
+    "description": "Sodales quis enim fringilla cursus Fusce Aliquam sagittis id venenatis consequat. Suspendisse semper hendrerit aliquet risus dictumst condimentum ipsum.",
+    "category": {
+      "$oid": "5e895a5925f3bc22c4c52b67"
+    },
+    "inStock": 5,
+    "price": 250,
+    "mainPhoto": {
+      "$oid": "5e8ade1f0ad55f0c3ca55aea"
+    },
+    "photos": [
+      {
+        "$oid": "5e8ade1f0ad55f0c3ca55aea"
+      }
+    ],
+    "master": null,
+    "power": 300,
+    "_createdAt": {
+      "$date": "2020-04-06T08:10:57.256Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8aef41a9131b1970d25f83"
+    },
+    "_class": "itemKettle",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Sad kettle",
+    "brief": "Gravida risus augue tempus Nulla Aenean enim Curabitur",
+    "description": "Pede volutpat nulla Nulla gravida gravida libero rhoncus non cursus cursus. Id orci Vestibulum In malesuada platea Suspendisse a Lorem non id. Felis Aenean non in.",
+    "category": {
+      "$oid": "5e895a1f25f3bc22c4c52b66"
+    },
+    "inStock": 0,
+    "price": 46,
+    "mainPhoto": {
+      "$oid": "5e8ae4f30ad55f0c3ca55b24"
+    },
+    "photos": [
+      {
+        "$oid": "5e8ae4f30ad55f0c3ca55b24"
+      }
+    ],
+    "master": null,
+    "volume": 4,
+    "power": 1500,
+    "_createdAt": {
+      "$date": "2020-04-06T08:58:41.333Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T09:03:23.480Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8aef75a9131b1970d25f84"
+    },
+    "_class": "itemKettle",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Small sad kettle",
+    "brief": "Gravida risus augue tempus Nulla Aenean enim Curabitur",
+    "description": "Pede volutpat nulla Nulla gravida gravida libero rhoncus non cursus cursus. Id orci Vestibulum In malesuada platea Suspendisse a Lorem non id. Felis Aenean non in.",
+    "category": {
+      "$oid": "5e895a1f25f3bc22c4c52b66"
+    },
+    "inStock": 16,
+    "price": 46,
+    "mainPhoto": {
+      "$oid": "5e8ae4f30ad55f0c3ca55b24"
+    },
+    "photos": [
+      {
+        "$oid": "5e8ae4f30ad55f0c3ca55b24"
+      }
+    ],
+    "master": {
+      "$oid": "5e8aef41a9131b1970d25f83"
+    },
+    "volume": 2,
+    "power": 1000,
+    "_createdAt": {
+      "$date": "2020-04-06T08:59:33.047Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T09:03:29.104Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8aef9fa9131b1970d25f85"
+    },
+    "_class": "itemKettle",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Fat sad kettle",
+    "brief": "Gravida risus augue tempus Nulla Aenean enim Curabitur",
+    "description": "Pede volutpat nulla Nulla gravida gravida libero rhoncus non cursus cursus. Id orci Vestibulum In malesuada platea Suspendisse a Lorem non id. Felis Aenean non in.",
+    "category": {
+      "$oid": "5e895a1f25f3bc22c4c52b66"
+    },
+    "inStock": 24,
+    "price": 64,
+    "mainPhoto": {
+      "$oid": "5e8ae4f30ad55f0c3ca55b24"
+    },
+    "photos": [
+      {
+        "$oid": "5e8ae4f30ad55f0c3ca55b24"
+      }
+    ],
+    "master": {
+      "$oid": "5e8aef41a9131b1970d25f83"
+    },
+    "volume": 3,
+    "power": 1500,
+    "_createdAt": {
+      "$date": "2020-04-06T09:00:15.633Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T09:03:49.121Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8af04ea9131b1970d25f86"
+    },
+    "_class": "itemKettle",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Furious kettle",
+    "brief": "Sed dictumst facilisi iaculis sagittis justo cursus sed",
+    "description": "Metus et cursus cursus risus Morbi ante scelerisque Curabitur est ligula. Ut a netus Pellentesque adipiscing vel dui et ac ultrices enim.",
+    "category": {
+      "$oid": "5e895a1f25f3bc22c4c52b66"
+    },
+    "inStock": 17,
+    "price": 87,
+    "mainPhoto": {
+      "$oid": "5e8aee6da9131b1970d25f82"
+    },
+    "photos": [
+      {
+        "$oid": "5e8aee6da9131b1970d25f82"
+      }
+    ],
+    "master": null,
+    "volume": 5,
+    "power": 2000,
+    "_createdAt": {
+      "$date": "2020-04-06T09:03:10.175Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bbe7285419b19049a54e9"
+    },
+    "_class": "itemCoat",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Hooded coat",
+    "brief": "Eros amet ac fermentum lorem Nunc convallis et feugiat porttitor sed",
+    "description": "Tempus Curabitur in at tempus adipiscing auctor amet vitae Pellentesque Nam. Urna egestas feugiat.",
+    "category": {
+      "$oid": "5e87d0f6a95a711968b2569c"
+    },
+    "inStock": 0,
+    "price": 100,
+    "mainPhoto": {
+      "$oid": "5e8bbe4185419b19049a54e2"
+    },
+    "photos": [
+      {
+        "$oid": "5e8bbe4185419b19049a54e2"
+      },
+      {
+        "$oid": "5e8bbe5385419b19049a54e5"
+      },
+      {
+        "$oid": "5e8bbe6385419b19049a54e8"
+      }
+    ],
+    "master": null,
+    "fabric": "Cashmere",
+    "size": "S",
+    "_createdAt": {
+      "$date": "2020-04-06T23:42:42.939Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bbf0685419b19049a54ea"
+    },
+    "_class": "itemCoat",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Cashmere hooded coat",
+    "brief": "Eros amet ac fermentum lorem Nunc convallis et feugiat porttitor sed",
+    "description": "Tempus Curabitur in at tempus adipiscing auctor amet vitae Pellentesque Nam. Urna egestas feugiat.",
+    "category": {
+      "$oid": "5e87d0f6a95a711968b2569c"
+    },
+    "inStock": 10,
+    "price": 100,
+    "mainPhoto": {
+      "$oid": "5e8bbe5385419b19049a54e5"
+    },
+    "photos": [
+      {
+        "$oid": "5e8bbe5385419b19049a54e5"
+      }
+    ],
+    "master": {
+      "$oid": "5e8bbe7285419b19049a54e9"
+    },
+    "fabric": "Cashmere",
+    "size": "S",
+    "_createdAt": {
+      "$date": "2020-04-06T23:45:10.810Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bbf1785419b19049a54eb"
+    },
+    "_class": "itemCoat",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Cashmere hooded coat",
+    "brief": "Eros amet ac fermentum lorem Nunc convallis et feugiat porttitor sed",
+    "description": "Tempus Curabitur in at tempus adipiscing auctor amet vitae Pellentesque Nam. Urna egestas feugiat.",
+    "category": {
+      "$oid": "5e87d0f6a95a711968b2569c"
+    },
+    "inStock": 15,
+    "price": 115,
+    "mainPhoto": {
+      "$oid": "5e8bbe5385419b19049a54e5"
+    },
+    "photos": [
+      {
+        "$oid": "5e8bbe5385419b19049a54e5"
+      }
+    ],
+    "master": {
+      "$oid": "5e8bbe7285419b19049a54e9"
+    },
+    "fabric": "Cashmere",
+    "size": "M",
+    "_createdAt": {
+      "$date": "2020-04-06T23:45:27.405Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T23:47:31.678Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bbf6285419b19049a54ec"
+    },
+    "_class": "itemCoat",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Wool hooded coat",
+    "brief": "Quisque Ut senectus pellentesque nunc vel cursus",
+    "description": "Tempus Curabitur in at tempus adipiscing auctor amet vitae Pellentesque Nam. Urna egestas feugiat.",
+    "category": {
+      "$oid": "5e87d0f6a95a711968b2569c"
+    },
+    "inStock": 24,
+    "price": 240,
+    "mainPhoto": {
+      "$oid": "5e8bbe6385419b19049a54e8"
+    },
+    "photos": [
+      {
+        "$oid": "5e8bbe6385419b19049a54e8"
+      }
+    ],
+    "master": {
+      "$oid": "5e8bbe7285419b19049a54e9"
+    },
+    "fabric": "Wool",
+    "size": "S",
+    "_createdAt": {
+      "$date": "2020-04-06T23:46:42.875Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T23:50:21.989Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bbf6b85419b19049a54ed"
+    },
+    "_class": "itemCoat",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Wool hooded coat",
+    "brief": "Quisque Ut senectus pellentesque nunc vel cursus",
+    "description": "Tempus Curabitur in at tempus adipiscing auctor amet vitae Pellentesque Nam. Urna egestas feugiat.",
+    "category": {
+      "$oid": "5e87d0f6a95a711968b2569c"
+    },
+    "inStock": 10,
+    "price": 220,
+    "mainPhoto": {
+      "$oid": "5e8bbe6385419b19049a54e8"
+    },
+    "photos": [
+      {
+        "$oid": "5e8bbe6385419b19049a54e8"
+      }
+    ],
+    "master": {
+      "$oid": "5e8bbe7285419b19049a54e9"
+    },
+    "fabric": "Wool",
+    "size": "M",
+    "_createdAt": {
+      "$date": "2020-04-06T23:46:51.963Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-06T23:48:09.906Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bc0dc85419b19049a54f1"
+    },
+    "_class": "itemCoat",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Sun hoodie",
+    "brief": "Et sit Curabitur tempus fringilla Curabitur Nulla suscipit",
+    "description": "Tellus id urna et est egestas eu Aenean a elit auctor. Tempus ut Pellentesque ipsum tincidunt risus urna nibh.",
+    "category": {
+      "$oid": "5e87d0f6a95a711968b2569c"
+    },
+    "inStock": 17,
+    "price": 48,
+    "mainPhoto": {
+      "$oid": "5e8bc0cd85419b19049a54f0"
+    },
+    "photos": [
+      {
+        "$oid": "5e8bc0cd85419b19049a54f0"
+      }
+    ],
+    "master": null,
+    "fabric": "Fleece",
+    "size": "M",
+    "_createdAt": {
+      "$date": "2020-04-06T23:53:00.449Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bd35a85419b19049a5596"
+    },
+    "_class": "itemVehicleMotorcycle",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Ninja Horse",
+    "brief": "Malesuada Phasellus tortor Sed elit elit et interdum ullamcorper",
+    "description": "Lorem ipsum dolor sit amet consectetuer tortor velit Nunc at Aliquam. A vitae justo ornare nec ac rutrum egestas Nullam condimentum ipsum.",
+    "category": {
+      "$oid": "5e89598b25f3bc22c4c52b63"
+    },
+    "inStock": 11,
+    "price": 4500,
+    "mainPhoto": {
+      "$oid": "5e8bd31985419b19049a5595"
+    },
+    "photos": [
+      {
+        "$oid": "5e8bd31985419b19049a5595"
+      }
+    ],
+    "master": null,
+    "engine": 999,
+    "topSpeed": 300,
+    "_createdAt": {
+      "$date": "2020-04-07T01:11:54.880Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bd71101733d1ef02418d8"
+    },
+    "_class": "itemVehicleMotorcycle",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "True moto",
+    "brief": "Sed habitasse tristique montes sodales elit elit eleifend",
+    "description": "Curabitur pretium a Vivamus. Ultrices elit suscipit enim quam et urna pretium convallis ipsum Donec. Orci vitae Lorem massa.",
+    "category": {
+      "$oid": "5e89598b25f3bc22c4c52b63"
+    },
+    "inStock": 28,
+    "price": 888,
+    "mainPhoto": {
+      "$oid": "5e8bd69401733d1ef02418d7"
+    },
+    "photos": [
+      {
+        "$oid": "5e8bd69401733d1ef02418d7"
+      }
+    ],
+    "master": null,
+    "engine": 125,
+    "topSpeed": 70,
+    "_createdAt": {
+      "$date": "2020-04-07T01:27:45.952Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-07T01:27:53.100Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bd81401733d1ef02418dc"
+    },
+    "_class": "itemVehicleTruck",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Mammoth truck",
+    "brief": "Ridiculus condimentum eu urna ipsum vitae feugiat nec tempor",
+    "description": "Nam fermentum Nullam leo elit eget ac justo nunc ligula id. Malesuada Vivamus turpis Duis est Nam magnis Sed at adipiscing semper.",
+    "category": {
+      "$oid": "5e8959b125f3bc22c4c52b64"
+    },
+    "inStock": 0,
+    "price": 25000,
+    "mainPhoto": {
+      "$oid": "5e8bd79e01733d1ef02418db"
+    },
+    "photos": [
+      {
+        "$oid": "5e8bd79e01733d1ef02418db"
+      }
+    ],
+    "master": null,
+    "engine": 5000,
+    "payload": 1000,
+    "_createdAt": {
+      "$date": "2020-04-07T01:32:04.405Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bd84301733d1ef02418dd"
+    },
+    "_class": "itemVehicleTruck",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Mammoth truck",
+    "brief": "Ridiculus condimentum eu urna ipsum vitae feugiat nec tempor",
+    "description": "Nam fermentum Nullam leo elit eget ac justo nunc ligula id. Malesuada Vivamus turpis Duis est Nam magnis Sed at adipiscing semper.",
+    "category": {
+      "$oid": "5e8959b125f3bc22c4c52b64"
+    },
+    "inStock": 15,
+    "price": 25000,
+    "mainPhoto": {
+      "$oid": "5e8bd79e01733d1ef02418db"
+    },
+    "photos": [
+      {
+        "$oid": "5e8bd79e01733d1ef02418db"
+      }
+    ],
+    "master": {
+      "$oid": "5e8bd81401733d1ef02418dc"
+    },
+    "engine": 5000,
+    "payload": 1000,
+    "_createdAt": {
+      "$date": "2020-04-07T01:32:51.147Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bd85b01733d1ef02418de"
+    },
+    "_class": "itemVehicleTruck",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Mammoth truck",
+    "brief": "Ridiculus condimentum eu urna ipsum vitae feugiat nec tempor",
+    "description": "Nam fermentum Nullam leo elit eget ac justo nunc ligula id. Malesuada Vivamus turpis Duis est Nam magnis Sed at adipiscing semper.",
+    "category": {
+      "$oid": "5e8959b125f3bc22c4c52b64"
+    },
+    "inStock": 10,
+    "price": 45000,
+    "mainPhoto": {
+      "$oid": "5e8bd79e01733d1ef02418db"
+    },
+    "photos": [
+      {
+        "$oid": "5e8bd79e01733d1ef02418db"
+      }
+    ],
+    "master": {
+      "$oid": "5e8bd81401733d1ef02418dc"
+    },
+    "engine": 6000,
+    "payload": 2000,
+    "_createdAt": {
+      "$date": "2020-04-07T01:33:15.948Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8bd92501733d1ef02418e2"
+    },
+    "_class": "itemVehicleTruck",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "active": true,
+    "name": "Cement mixer",
+    "brief": "Urna risus convallis dolor cursus mauris Nullam vitae",
+    "description": "Consequat dictumst id fermentum lorem cursus et Aenean Nam sagittis Sed. Interdum sapien pretium nunc vel enim feugiat nisl tellus pede Curabitur.",
+    "category": {
+      "$oid": "5e8959b125f3bc22c4c52b64"
+    },
+    "inStock": 11,
+    "price": 65000,
+    "mainPhoto": {
+      "$oid": "5e8bd90b01733d1ef02418e1"
+    },
+    "photos": [
+      {
+        "$oid": "5e8bd90b01733d1ef02418e1"
+      }
+    ],
+    "master": null,
+    "engine": 5500,
+    "payload": 1500,
+    "_createdAt": {
+      "$date": "2020-04-07T01:36:37.872Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-07T01:37:15.231Z"
+    }
+  }
+]

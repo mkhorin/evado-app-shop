@@ -1,0 +1,34 @@
+<%
+layout(_view.get('_layout/content'));
+
+script('front/script/Shop.js');
+script('front/script/Page.js');
+script('front/script/Cart.js');
+script('front/script/Category.js');
+script('front/script/Item.js');
+script('front/script/Order.js');
+script('front/script/Search.js');
+script('front/script/module.js');
+
+const dataUrl = _url('/api/base/data/');
+const metaUrl = _url('/api/base/meta/');
+%>
+
+<div class="shop"
+     data-guest="<%- _controller.user.isGuest() %>"
+     data-list="<%- dataUrl + 'list' %>"
+     data-read="<%- dataUrl + 'read' %>"
+     data-create="<%- dataUrl + 'create' %>"
+     data-update="<%- dataUrl + 'update' %>"
+     data-delete="<%- dataUrl + 'delete' %>"
+     data-meta-class="<%- metaUrl + 'class' %>">
+
+    <%- include('./_main') %>
+    <%- include('./_item') %>
+    <%- include('./_category') %>
+    <%- include('./_search') %>
+    <%- include('./_cart') %>
+    <%- include('./_orders') %>
+    <%- include('./_order') %>
+
+</div>

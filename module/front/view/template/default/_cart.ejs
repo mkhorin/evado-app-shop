@@ -1,0 +1,81 @@
+
+<div class="page" data-page="cart" data-handler="CartPage">
+
+    <div class="page-head">
+        <ol class="breadcrumb">
+            <li><a href="#" data-action="main" data-t="">Main</a></li>
+            <li data-t="">Cart</li>
+        </ol>
+        <%- include('./_user') %>
+    </div>
+
+    <h1 data-t="">Cart</h1>
+
+    <div class="item-list loadable-container" data-handler="CartItemList">
+
+        <div class="loadable-content"></div>
+        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+
+        <template data-id="list">
+            <div class="cart-items">{{items}}</div>
+            <div class="cart-total">
+                <div>
+                    <span data-t="">Total price</span>:
+                    <span class="num"></span>
+                </div>
+                <button class="btn-primary btn" data-action="order">
+                    <span data-t="">Order</span>
+                </button>
+            </div>
+        </template>
+
+        <template data-id="item">
+            <div class="cart-item" data-id="{{_id}}">
+                <div class="cart-item-photo">
+                    <a href="#" data-action="item" title="{{name}}">
+                        <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=tiny&v=.photo&id={{photo}}"
+                             class="thumbnail img-responsive" alt="{{name}}">
+                    </a>
+                </div>
+                <div class="cart-item-name">
+                    <a href="#" data-action="item" title="{{name}}">{{name}}</a>
+                </div>
+                <div class="cart-item-qty">
+                    <span data-t="">Quantity</span>:
+                    <b class="qty">{{qty}}</b>
+                </div>
+                <div class="cart-item-price">
+                    <span data-t="">Price</span>:
+                    <b class="price">{{price}}</b>
+                </div>
+                <div class="cart-item-command">
+                    <span class="fa fa-plus" data-command="increase" title="Increase quantity"></span>
+                    <span class="fa fa-minus" data-command="reduce" title="Reduce quantity"></span>
+                    <span class="fa fa-trash" data-command="remove" title="Remove"></span>
+                </div>
+            </div>
+        </template>
+
+        <template data-id="ordered">
+            <div class="alert-success alert">
+                <span data-t="">Your order has been created!</span>
+            </div>
+            <button class="btn-primary btn" type="button" data-action="orders">
+                <span data-t="">Orders</span>
+            </button>
+        </template>
+
+        <template data-id="empty">
+            <div class="alert-warning alert">
+                <span data-t="">Your cart is empty</span>
+            </div>
+            <button class="btn-primary btn" type="button" data-action="orders">
+                <span data-t="">Orders</span>
+            </button>
+        </template>
+
+        <template data-id="error">
+            <div class="alert-danger alert">{{text}}</div>
+        </template>
+    </div>
+</div>

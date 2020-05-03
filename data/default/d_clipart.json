@@ -1,0 +1,188 @@
+[
+  {
+    "_id": {
+      "$oid": "5e892e31e0d4991d904563a5"
+    },
+    "_class": "clipart",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "file": "2020-04/5e892fd0e0d4991d904563a8",
+    "_size": 2021,
+    "_mime": "image/svg+xml",
+    "_createdAt": {
+      "$date": "2020-04-05T01:02:41.578Z"
+    },
+    "_editor": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "_updatedAt": {
+      "$date": "2020-04-05T01:09:38.404Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e892ff5e0d4991d904563ac"
+    },
+    "_class": "clipart",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "file": "2020-04/5e892ff2e0d4991d904563aa",
+    "_size": 4311,
+    "_mime": "image/svg+xml",
+    "_createdAt": {
+      "$date": "2020-04-05T01:10:13.401Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e892ffce0d4991d904563af"
+    },
+    "_class": "clipart",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "file": "2020-04/5e892ffae0d4991d904563ad",
+    "_size": 5043,
+    "_mime": "image/svg+xml",
+    "_createdAt": {
+      "$date": "2020-04-05T01:10:20.300Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e893009e0d4991d904563b2"
+    },
+    "_class": "clipart",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "file": "2020-04/5e893007e0d4991d904563b0",
+    "_size": 7548,
+    "_mime": "image/svg+xml",
+    "_createdAt": {
+      "$date": "2020-04-05T01:10:33.871Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e893015e0d4991d904563b5"
+    },
+    "_class": "clipart",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "file": "2020-04/5e893012e0d4991d904563b3",
+    "_size": 2540,
+    "_mime": "image/svg+xml",
+    "_createdAt": {
+      "$date": "2020-04-05T01:10:45.143Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e893061e0d4991d904563b8"
+    },
+    "_class": "clipart",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "file": "2020-04/5e89305fe0d4991d904563b6",
+    "_size": 3037,
+    "_mime": "image/svg+xml",
+    "_createdAt": {
+      "$date": "2020-04-05T01:12:01.176Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e893075e0d4991d904563bb"
+    },
+    "_class": "clipart",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "file": "2020-04/5e893069e0d4991d904563b9",
+    "_size": 11674,
+    "_mime": "image/svg+xml",
+    "_createdAt": {
+      "$date": "2020-04-05T01:12:21.964Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e89309ee0d4991d904563be"
+    },
+    "_class": "clipart",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "file": "2020-04/5e89309de0d4991d904563bc",
+    "_size": 2153,
+    "_mime": "image/svg+xml",
+    "_createdAt": {
+      "$date": "2020-04-05T01:13:02.466Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8930a5e0d4991d904563c1"
+    },
+    "_class": "clipart",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "file": "2020-04/5e8930a4e0d4991d904563bf",
+    "_size": 2523,
+    "_mime": "image/svg+xml",
+    "_createdAt": {
+      "$date": "2020-04-05T01:13:09.534Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8930ace0d4991d904563c4"
+    },
+    "_class": "clipart",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "file": "2020-04/5e8930aae0d4991d904563c2",
+    "_size": 4623,
+    "_mime": "image/svg+xml",
+    "_createdAt": {
+      "$date": "2020-04-05T01:13:16.367Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e89332fe0d4991d904563c7"
+    },
+    "_class": "clipart",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "file": "2020-04/5e89332de0d4991d904563c5",
+    "_size": 2648,
+    "_mime": "image/svg+xml",
+    "_createdAt": {
+      "$date": "2020-04-05T01:23:59.304Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e893338e0d4991d904563ca"
+    },
+    "_class": "clipart",
+    "_creator": {
+      "$oid": "5e758a3230f1791024d81986"
+    },
+    "file": "2020-04/5e893334e0d4991d904563c8",
+    "_size": 2343,
+    "_mime": "image/svg+xml",
+    "_createdAt": {
+      "$date": "2020-04-05T01:24:08.584Z"
+    }
+  }
+]

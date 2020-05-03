@@ -1,0 +1,28 @@
+{
+  "label": "Create",
+  "description": "Default create",
+  "attrs": [
+    {
+      "name": "name",
+      "orderNumber": 10
+    },
+    {
+      "name": "description",
+      "orderNumber": 20
+    },
+    {
+      "name": "orderNumber",
+      "orderNumber": 30
+    },
+    {
+      "name": "icon",
+      "group": null,
+      "orderNumber": 40
+    },
+    {
+      "name": "parent",
+      "group": null,
+      "orderNumber": 50
+    }
+  ]
+}
