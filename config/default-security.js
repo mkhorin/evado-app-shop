@@ -6,72 +6,72 @@ module.exports = {
 
     metaPermissions: [{
         description: 'Full access to data',
+        roles: 'administrator',
         type: 'allow',
-        roles: ['administrator'],
-        actions: ['all'],
-        targets: [{type: 'all'}]
+        actions: 'all',
+        targets: {type: 'all'}
     }, {
-        type: 'allow',
         roles: ['guest', 'user'],
-        actions: ['read'],
-        targets: [{
+        type: 'allow',
+        actions: 'read',
+        targets: {
             type: 'class',
             class: ['clipart', 'photo']
-        }]
+        }
     }, {
-        type: 'allow',
         roles: ['guest', 'user'],
-        actions: ['read'],
-        targets: [{
+        type: 'allow',
+        actions: 'read',
+        targets: {
             type: 'view',
             class: 'category',
             view: ['publicList', 'publicView']
-        }]
+        }
     }, {
-        type: 'allow',
         roles: ['guest', 'user'],
-        actions: ['read'],
-        targets: [{
+        type: 'allow',
+        actions: 'read',
+        targets: {
             type: 'view',
             class: 'item',
             view: ['publicList', 'publicView']
-        }]
+        }
     }, {
+        roles: 'user',
         type: 'allow',
-        roles: ['user'],
-        actions: ['read'],
-        targets: [{
+        actions: 'read',
+        targets: {
             type: 'view',
             class: 'order',
             view: ['listByCustomer', 'viewByCustomer']
-        }]
+        }
     }, {
+        roles: 'user',
         type: 'allow',
-        roles: ['user'],
-        actions: ['read'],
-        targets: [{
+        actions: 'read',
+        targets: {
             type: 'view',
             class: 'orderItem',
             view: 'viewByCustomer'
-        }]
+        }
     }, {
+        roles: 'user',
         type: 'allow',
-        roles: ['user'],
-        actions: ['create'],
-        targets: [{
+        actions: 'create',
+        targets: {
             type: 'view',
             class: 'order',
             view: 'createFromCart'
-        }]
+        }
     }, {
+        roles: 'user',
         type: 'allow',
-        roles: ['user'],
-        actions: ['delete'],
-        targets: [{
+        actions: 'delete',
+        targets: {
             type: 'view',
             class: 'order',
             view: 'deleteByCustomer'
-        }]
+        }
     }],
 
     permissions: {
@@ -98,8 +98,7 @@ module.exports = {
             children: [
                 'moduleAdmin',
                 'moduleOffice',
-                'moduleStudio',
-                'upload'
+                'moduleStudio'
             ]
         },
         'guest': {
@@ -108,12 +107,12 @@ module.exports = {
         },
         'user': {
             label: 'User',
-            description: 'Default role for new user'
+            description: 'Default role for new registered user'
         }
     },
 
     assignments: {
-        'Adam': ['administrator']
+        'Adam': 'administrator'
     },
 
     rules: {

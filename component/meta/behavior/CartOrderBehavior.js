@@ -49,7 +49,7 @@ module.exports = class CartOrderBehavior extends Base {
             const order = this.owner.getId();
             const itemClass = this.owner.class.meta.getClass('orderItem');
             for (const item of this._items) {
-                const model = this.owner.spawnByView(itemClass);
+                const model = this.owner.createByView(itemClass);
                 model.assign({
                     order,
                     item: itemClass.key.normalize(item.id),

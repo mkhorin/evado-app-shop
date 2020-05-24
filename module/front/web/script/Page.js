@@ -16,6 +16,10 @@ Shop.Page = class Page extends Shop.Element {
     activate () {
         this.shop.togglePage(this.name);
     }
+
+    showPage () {
+        this.front.showPage(this.name, ...arguments);
+    }
 };
 
 Shop.MainPage = class MainPage extends Shop.Page {
@@ -46,7 +50,7 @@ Shop.CategoryPage = class CategoryPage extends Shop.Page {
     }
 
     onCategory (event, {category}) {
-        this.shop.showPage(this.name);
+        this.showPage();
         this.category.setInstance(category);
     }
 };
@@ -65,7 +69,7 @@ Shop.ItemPage = class ItemPage extends Shop.Page {
     }
 
     onItem (event, data) {
-        this.shop.showPage(this.name, data);
+        this.showPage(data);
     }
 };
 
@@ -84,7 +88,7 @@ Shop.CartPage = class CartPage extends Shop.Page {
     }
 
     onCart () {
-        this.shop.showPage(this.name);
+        this.showPage();
     }
 };
 
@@ -102,7 +106,7 @@ Shop.OrdersPage = class OrdersPage extends Shop.Page {
     }
 
     onOrders () {
-        this.shop.showPage(this.name);
+        this.showPage();
     }
 };
 
@@ -120,6 +124,6 @@ Shop.OrderPage = class OrderPage extends Shop.Page {
     }
 
     onOrder (event, data) {
-        this.shop.showPage(this.name, data);
+        this.showPage(data);
     }
 };
