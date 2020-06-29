@@ -18,7 +18,7 @@ Shop.Page = class Page extends Shop.Element {
     }
 
     showPage () {
-        this.front.showPage(this.name, ...arguments);
+        this.shop.showPage(this.name, ...arguments);
     }
 };
 
