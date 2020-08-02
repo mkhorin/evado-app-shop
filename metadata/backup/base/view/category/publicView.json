@@ -1,0 +1,31 @@
+{
+  "label": "Public view",
+  "attrs": [
+    {
+      "name": "name",
+      "orderNumber": 10
+    },
+    {
+      "name": "description",
+      "orderNumber": 20
+    },
+    {
+      "name": "parent",
+      "orderNumber": 30
+    },
+    {
+      "name": "children",
+      "eagerLoading": true,
+      "eagerView": "publicView",
+      "orderNumber": 40
+    },
+    {
+      "name": "icon",
+      "orderNumber": 50
+    },
+    {
+      "name": "descendants",
+      "orderNumber": 60
+    }
+  ]
+}

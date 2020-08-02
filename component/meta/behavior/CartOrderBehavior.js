@@ -14,12 +14,12 @@ module.exports = class CartOrderBehavior extends Base {
     }
 
     async validate () {
-        const items = this.owner.get('items');
+        const items = this.get('items');
         if (!Array.isArray(items) || !items.length) {
             return this.addItemError('Invalid items');
         }
         const ids = items.map(item => item.id);
-        const query = this.owner.class.meta.getClass('item').findById(ids);
+        const query = this.getMetaClass('item').findById(ids);
         const itemMap = await query.and({active: true}).raw().indexByKey().all();
         if (Object.values(itemMap).length !== items.length) {
             return this.addItemError('Item not found');
@@ -47,7 +47,7 @@ module.exports = class CartOrderBehavior extends Base {
     async afterInsert () {
         if (Array.isArray(this._items)) {
             const order = this.owner.getId();
-            const itemClass = this.owner.class.meta.getClass('orderItem');
+            const itemClass = this.getMetaClass('orderItem');
             for (const item of this._items) {
                 const model = this.owner.createByView(itemClass);
                 model.assign({

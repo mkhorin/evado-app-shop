@@ -1,0 +1,27 @@
+{
+  "label": "Public list",
+  "description": "Public main categories",
+  "filter": {
+    "parent": null
+  },
+  "order": {
+    "orderNumber": 1
+  },
+  "attrs": [
+    {
+      "name": "name",
+      "orderNumber": 10
+    },
+    {
+      "name": "description",
+      "orderNumber": 20
+    },
+    {
+      "name": "icon",
+      "options": {
+        "thumbnail": "tiny"
+      },
+      "orderNumber": 50
+    }
+  ]
+}

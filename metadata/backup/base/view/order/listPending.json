@@ -1,0 +1,24 @@
+{
+  "label": "Pending approval",
+  "description": "Pending approval orders",
+  "filter": {
+    "agreed": false
+  },
+  "order": {
+    "$key": 1
+  },
+  "attrs": [
+    {
+      "name": "customer",
+      "orderNumber": 10
+    },
+    {
+      "name": "totalPrice",
+      "orderNumber": 70
+    },
+    {
+      "name": "_createdAt",
+      "orderNumber": 80
+    }
+  ]
+}

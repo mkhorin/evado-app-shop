@@ -1,0 +1,91 @@
+{
+  "label": "Main",
+  "description": "Main navigation section",
+  "nodes": [
+    {
+      "parent": "items",
+      "name": "allItems",
+      "label": "All items",
+      "orderNumber": 10,
+      "class": "item"
+    },
+    {
+      "name": "orders",
+      "label": "Orders",
+      "orderNumber": 10
+    },
+    {
+      "parent": "images",
+      "name": "cliparts",
+      "label": "Cliparts",
+      "orderNumber": 10,
+      "class": "clipart"
+    },
+    {
+      "parent": "orders",
+      "name": "allOrders",
+      "label": "All orders",
+      "orderNumber": 10,
+      "class": "order"
+    },
+    {
+      "name": "items",
+      "label": "Items",
+      "orderNumber": 20
+    },
+    {
+      "parent": "images",
+      "name": "photos",
+      "label": "Photos",
+      "orderNumber": 20,
+      "class": "photo"
+    },
+    {
+      "parent": "items",
+      "name": "coats",
+      "label": "Coats",
+      "orderNumber": 20,
+      "class": "itemCoat"
+    },
+    {
+      "parent": "orders",
+      "name": "pending",
+      "label": "Pending approval",
+      "orderNumber": 20,
+      "class": "order",
+      "view": "listPending"
+    },
+    {
+      "name": "categories",
+      "label": "Categories",
+      "orderNumber": 30,
+      "class": "category"
+    },
+    {
+      "parent": "items",
+      "name": "kettles",
+      "label": "Kettles",
+      "orderNumber": 30,
+      "class": "itemKettle"
+    },
+    {
+      "name": "images",
+      "label": "Images",
+      "orderNumber": 40
+    },
+    {
+      "parent": "items",
+      "name": "shirts",
+      "label": "Shirts",
+      "orderNumber": 40,
+      "class": "itemShirt"
+    },
+    {
+      "parent": "items",
+      "name": "vehicles",
+      "label": "Vehicles",
+      "orderNumber": 50,
+      "class": "itemVehicle"
+    }
+  ]
+}

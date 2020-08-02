@@ -1,0 +1,29 @@
+{
+  "abstract": false,
+  "description": "Electrical devices for drying a person's hair by blowing warm air over it",
+  "label": "Hairdryer",
+  "parent": "item",
+  "attrs": [
+    {
+      "name": "power",
+      "label": "Power",
+      "type": "integer",
+      "description": "Device power (watt)",
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "options",
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 130,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    }
+  ]
+}

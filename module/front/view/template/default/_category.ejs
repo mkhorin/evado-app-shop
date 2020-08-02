@@ -3,9 +3,6 @@
 
     <div class="category loadable-container" data-handler="Category">
 
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
-
         <template data-id="category">
 
             <div class="page-head">
@@ -46,7 +43,7 @@
             <div class="col-sm-3 col-lg-2">
                 <div class="category-card" data-id="{{_id}}">
                     <a href="#" data-action="category">
-                        <img data-src="<%- _url('/api/base/file/download') %>?v=.clipart&id={{icon}}"
+                        <img data-src="<%- _url('/api/base/file/download') %>?c=clipart&id={{icon}}"
                              class="thumbnail img-responsive" alt="{{description}}">
                     </a>
                     <h4><a href="#" data-action="category">{{name}}</a></h4>
@@ -70,9 +67,6 @@
                     </div>
                 </form>
 
-                <div class="loadable-content"></div>
-                <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
-
                 <template data-id="list">
                     <div class="row">{{items}}</div>
                 </template>
@@ -83,11 +77,17 @@
 
                 <%- include('./_itemCard') %>
                 <%- include('./_pagination') %>
+
+                <div class="loadable-content"></div>
+                <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
             </div>
         </template>
 
         <template data-id="error">
             <div class="alert-danger alert">{{text}}</div>
         </template>
+
+        <div class="loadable-content"></div>
+        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
     </div>
 </div>

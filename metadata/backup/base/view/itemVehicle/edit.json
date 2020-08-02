@@ -1,0 +1,52 @@
+{
+  "label": "Edit",
+  "description": "Default edit",
+  "attrs": [
+    {
+      "name": "active",
+      "orderNumber": 20
+    },
+    {
+      "name": "name",
+      "orderNumber": 30
+    },
+    {
+      "name": "brief",
+      "orderNumber": 40
+    },
+    {
+      "name": "description",
+      "orderNumber": 45
+    },
+    {
+      "name": "category",
+      "eagerLoading": true,
+      "orderNumber": 50
+    },
+    {
+      "name": "inStock",
+      "orderNumber": 60
+    },
+    {
+      "name": "price",
+      "orderNumber": 70
+    },
+    {
+      "name": "master",
+      "eagerLoading": true,
+      "orderNumber": 75
+    },
+    {
+      "name": "mainPhoto",
+      "orderNumber": 80
+    },
+    {
+      "name": "photos",
+      "orderNumber": 90
+    },
+    {
+      "name": "engine",
+      "orderNumber": 130
+    }
+  ]
+}

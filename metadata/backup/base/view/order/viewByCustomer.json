@@ -1,0 +1,32 @@
+{
+  "label": "View by customer",
+  "attrs": [
+    {
+      "name": "agreed",
+      "orderNumber": 20
+    },
+    {
+      "name": "paid",
+      "orderNumber": 30
+    },
+    {
+      "name": "shipped",
+      "orderNumber": 40
+    },
+    {
+      "name": "cancelled",
+      "orderNumber": 50
+    },
+    {
+      "name": "items",
+      "eagerLoading": true,
+      "eagerView": "viewByCustomer",
+      "orderNumber": 60,
+      "eagerDepth": 2
+    },
+    {
+      "name": "_createdAt",
+      "orderNumber": 80
+    }
+  ]
+}

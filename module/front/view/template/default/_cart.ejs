@@ -13,9 +13,6 @@
 
     <div class="item-list loadable-container" data-handler="CartItemList">
 
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
-
         <template data-id="list">
             <div class="cart-items">{{items}}</div>
             <div class="cart-total">
@@ -33,7 +30,7 @@
             <div class="cart-item" data-id="{{_id}}">
                 <div class="cart-item-photo">
                     <a href="#" data-action="item" title="{{name}}">
-                        <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=tiny&v=.photo&id={{photo}}"
+                        <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=tiny&c=photo&id={{photo}}"
                              class="thumbnail img-responsive" alt="{{name}}">
                     </a>
                 </div>
@@ -77,5 +74,8 @@
         <template data-id="error">
             <div class="alert-danger alert">{{text}}</div>
         </template>
+
+        <div class="loadable-content"></div>
+        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
     </div>
 </div>

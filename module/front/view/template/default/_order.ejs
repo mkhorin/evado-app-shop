@@ -3,9 +3,6 @@
 
     <div class="order loadable-container" data-handler="Order">
 
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
-
         <template data-id="order">
             <div class="page-head">
                 <ol class="breadcrumb">
@@ -74,7 +71,7 @@
             <div class="row-item" data-id="{{id}}">
                 <div class="cell">
                     <a href="#" data-action="item" title="{{name}}">
-                        <img src="<%- _url('/api/base/file/thumbnail') %>?s=tiny&v=.photo&id={{photo}}"
+                        <img src="<%- _url('/api/base/file/thumbnail') %>?s=tiny&c=photo&id={{photo}}"
                              class="img-responsive thumbnail" alt="">
                     </a>
                 </div>
@@ -104,5 +101,8 @@
         <template data-id="error">
             <div class="alert-danger alert">{{text}}</div>
         </template>
+
+        <div class="loadable-content"></div>
+        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
     </div>
 </div>

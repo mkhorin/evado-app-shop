@@ -1,0 +1,17 @@
+{
+  "label": "Create",
+  "attrs": [
+    {
+      "name": "order",
+      "orderNumber": 10
+    },
+    {
+      "name": "item",
+      "orderNumber": 20
+    },
+    {
+      "name": "quantity",
+      "orderNumber": 30
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "label": "Edit",
+  "description": "Default edit",
+  "attrs": [
+    {
+      "name": "name",
+      "orderNumber": 10
+    },
+    {
+      "name": "description",
+      "orderNumber": 20
+    },
+    {
+      "name": "orderNumber",
+      "orderNumber": 30
+    },
+    {
+      "name": "icon",
+      "orderNumber": 40
+    },
+    {
+      "name": "parent",
+      "eagerLoading": true,
+      "orderNumber": 50
+    },
+    {
+      "name": "children",
+      "orderNumber": 60
+    },
+    {
+      "name": "items",
+      "options": {
+        "css": "no-label"
+      },
+      "orderNumber": 70
+    }
+  ]
+}

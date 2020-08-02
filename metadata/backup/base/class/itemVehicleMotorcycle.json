@@ -1,0 +1,29 @@
+{
+  "abstract": false,
+  "description": "Motorized two-wheeled vehicle",
+  "label": "Motorcycle",
+  "parent": "itemVehicle",
+  "attrs": [
+    {
+      "name": "topSpeed",
+      "label": "Top speed",
+      "type": "integer",
+      "description": "Maximum vehicle speed (kilometers per hour)",
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "options",
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 140,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    }
+  ]
+}

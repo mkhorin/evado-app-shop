@@ -3,9 +3,6 @@
 
     <div class="item loadable-container" data-handler="Item">
 
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
-
         <template data-id="item">
             <div class="page-head">
                 <ol class="breadcrumb">
@@ -115,7 +112,7 @@
 
         <template data-id="photo">
             <div class="item {{active}}">
-                <img src="<%- _url('/api/base/file/thumbnail') %>?s=large&v=.photo&id={{_id}}"
+                <img src="<%- _url('/api/base/file/thumbnail') %>?s=large&c=photo&id={{_id}}"
                      class="img-responsive thumbnail" alt="">
             </div>
         </template>
@@ -140,5 +137,8 @@
                 </div>
             </div>
         </template>
+
+        <div class="loadable-content"></div>
+        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
     </div>
 </div>

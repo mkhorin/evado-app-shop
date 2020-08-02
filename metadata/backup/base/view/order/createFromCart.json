@@ -1,0 +1,35 @@
+{
+  "label": "Create from cart",
+  "description": "Creating an order from a client cart. Custom behavior creates the necessary functionality",
+  "attrs": [
+    {
+      "name": "agreed",
+      "orderNumber": 10
+    },
+    {
+      "name": "paid",
+      "orderNumber": 20
+    },
+    {
+      "name": "customer",
+      "orderNumber": 30
+    },
+    {
+      "name": "shipped",
+      "orderNumber": 40
+    },
+    {
+      "name": "cancelled",
+      "orderNumber": 80
+    }
+  ],
+  "behaviors": [
+    {
+      "type": "custom",
+      "orderNumber": 10,
+      "config": {
+        "Class": "component/meta/behavior/CartOrderBehavior"
+      }
+    }
+  ]
+}

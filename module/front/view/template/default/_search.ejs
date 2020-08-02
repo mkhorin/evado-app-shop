@@ -25,9 +25,6 @@
 
     <div class="item-list loadable-container" data-handler="SearchItemList">
 
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
-
         <template data-id="list">
             <div class="row">{{items}}</div>
         </template>
@@ -38,5 +35,8 @@
 
         <%- include('./_itemCard') %>
         <%- include('./_pagination') %>
+
+        <div class="loadable-content"></div>
+        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
     </div>
 </div>

@@ -1,0 +1,29 @@
+{
+  "abstract": false,
+  "description": "A motor vehicle designed to transport cargo",
+  "label": "Truck",
+  "parent": "itemVehicle",
+  "attrs": [
+    {
+      "name": "payload",
+      "label": "Payload",
+      "type": "integer",
+      "description": "Payload is the carrying capacity of truck",
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "options",
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 140,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    }
+  ]
+}
