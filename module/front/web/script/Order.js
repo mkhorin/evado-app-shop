@@ -67,7 +67,7 @@ Shop.Order = class Order extends Shop.LoadableContent {
 
     deleteOrder () {
         this.toggleLoader(true);
-        this.front.ajaxQueue.post(this.getUrl('delete'), {
+        this.shop.ajaxQueue.post(this.getUrl('delete'), {
             class: 'order',
             view: 'deleteByCustomer',
             id: this.id
