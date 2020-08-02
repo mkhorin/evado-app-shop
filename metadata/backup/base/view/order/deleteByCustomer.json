@@ -1,8 +1,0 @@
-{
-  "label": "Delete by customer",
-  "description": "Customer can delete their own non-agreed orders",
-  "filter": {
-    "customer": "$user",
-    "agreed": false
-  }
-}
