@@ -14,6 +14,8 @@ const dataUrl = _url('/api/base/data/');
 const metaUrl = _url('/api/base/meta/');
 %>
 
+<%- include(_view.get('_part/signboard')) %>
+
 <div class="shop"
      data-guest="<%- _controller.user.isGuest() %>"
      data-list="<%- dataUrl + 'list' %>"

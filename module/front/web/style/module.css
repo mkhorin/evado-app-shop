@@ -45,6 +45,13 @@ legend {
 .cell > label {
     color: #888;
 }
+.signboard {
+    padding: 20px;
+    margin-top: 20px;
+    color: #884;
+    background: #ffe;
+    border-bottom: 2px solid #cca;
+}
 
 /* LOADABLE */
 
