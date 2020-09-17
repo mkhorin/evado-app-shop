@@ -40,11 +40,15 @@ module.exports = class CartOrderBehavior extends Base {
         return this.owner.addError('items', message);
     }
 
-    async beforeInsert () {
+    beforeInsert () {
         this.owner.set('customer', this.owner.user.getId());
     }
 
     async afterInsert () {
+        await this.createOrderItems();
+    }
+
+    async createOrderItems (items) {
         if (Array.isArray(this._items)) {
             const order = this.owner.getId();
             const itemClass = this.getMetaClass('orderItem');

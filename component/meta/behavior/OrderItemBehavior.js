@@ -31,10 +31,10 @@ module.exports = class OrderItemBehavior extends Base {
 
     async beforeInsert () {
         await this.setPrice();
-        return this.updateStock(1);
+        await this.updateStock(1);
     }
 
-    async afterDelete () {
+    afterDelete () {
         return this.updateStock(-1);
     }
 
