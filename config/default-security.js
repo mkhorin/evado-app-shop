@@ -9,7 +9,9 @@ module.exports = {
         roles: 'administrator',
         type: 'allow',
         actions: 'all',
-        targets: {type: 'all'}
+        targets: {
+            type: 'all'
+        }
     }, {
         roles: ['guest', 'user'],
         type: 'allow',

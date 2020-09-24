@@ -1,9 +1,7 @@
-# Evado Shop App
+# Evado Shop
 
-Online shop for selling good goods
-
-- [Evado Declarative Framework](https://github.com/mkhorin/evado)
-- [Step-by-step tutorial](http://nervebit.com)
+Online shop application 
+built on [Evado Declarative Framework](https://github.com/mkhorin/evado).
 
 ## Docker installation
 
@@ -51,4 +49,4 @@ Password: 123456
 ```
 
 ## Tutorial
-- [Build App Without Coding](http://nervebit.com)
+- [Build an App Without Coding](http://nervebit.com)
