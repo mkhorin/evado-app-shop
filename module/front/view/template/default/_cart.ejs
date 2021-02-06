@@ -3,8 +3,8 @@
 
     <div class="page-head">
         <ol class="breadcrumb">
-            <li><a href="#" data-action="main" data-t="">Main</a></li>
-            <li data-t="">Cart</li>
+            <li class="breadcrumb-item"><a href="#" data-action="main" data-t="">Main</a></li>
+            <li class="breadcrumb-item" data-t="">Cart</li>
         </ol>
         <%- include('./_user') %>
     </div>
@@ -31,7 +31,7 @@
                 <div class="cart-item-photo">
                     <a href="#" data-action="item" title="{{name}}">
                         <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=tiny&c=photo&id={{photo}}"
-                             class="thumbnail img-responsive" alt="{{name}}">
+                             class="img-thumbnail img-fluid" alt="{{name}}">
                     </a>
                 </div>
                 <div class="cart-item-name">

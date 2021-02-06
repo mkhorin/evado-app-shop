@@ -3,7 +3,7 @@
 
     <div class="page-head">
         <ol class="breadcrumb">
-            <li data-t="">Main</li>
+            <li class="breadcrumb-item" data-t="">Main</li>
         </ol>
         <%- include('./_cartToggle') %>
         <%- include('./_user') %>
@@ -16,7 +16,7 @@
             <input type="search" class="form-control" placeholder="Search for...">
             <span class="input-group-btn">
                 <button class="btn btn-primary" type="submit">
-                    <span class="glyphicon glyphicon-search"></span>
+                    <i class="fas fa-search"></i>
                 </button>
             </span>
         </div>
@@ -29,11 +29,11 @@
         </template>
 
         <template data-id="category">
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="category-card" data-id="{{_id}}">
                     <a href="#" data-action="category">
                         <img data-src="<%- _url('/api/base/file/thumbnail') %>?c=clipart&id={{icon}}"
-                             class="thumbnail img-responsive" alt="{{description}}">
+                             class="img-thumbnail img-fluid" alt="{{description}}">
                     </a>
                     <h3><a href="#" data-action="category" data-t="">{{name}}</a></h3>
                 </div>

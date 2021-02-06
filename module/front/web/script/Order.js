@@ -1,6 +1,6 @@
 'use strict';
 
-Shop.Order = class Order extends Shop.LoadableContent {
+Shop.Order = class Order extends Shop.Loadable {
 
     init () {
         super.init();
@@ -81,7 +81,7 @@ Shop.Order = class Order extends Shop.LoadableContent {
     }
 };
 
-Shop.OrderList = class OrderList extends Shop.LoadableContent {
+Shop.OrderList = class OrderList extends Shop.Loadable {
 
     init () {
         super.init();
@@ -113,7 +113,7 @@ Shop.OrderList = class OrderList extends Shop.LoadableContent {
     }
 
     render (data) {
-        let items = data && data.items;
+        let items = data?.items;
         items = Array.isArray(items) ? items : [];
         items = items.map(this.renderItem, this).join('');
         const template = items ? 'list' : 'empty';
@@ -136,9 +136,9 @@ Shop.OrderList = class OrderList extends Shop.LoadableContent {
 
     onDone (data) {
         super.onDone(data);
-        this.pagination.setTotal(data && data.totalSize);
+        this.pagination.setTotal(data?.totalSize);
         this.$content.append(this.pagination.render());
-        this.translateContainer();
+        Jam.t(this.$container);
     }
 
     onDetail (event) {

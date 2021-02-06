@@ -1,6 +1,6 @@
 'use strict';
 
-Shop.Category = class Category extends Shop.LoadableContent {
+Shop.Category = class Category extends Shop.Loadable {
 
     getUrl () {
         return super.getUrl('read');
@@ -36,8 +36,7 @@ Shop.Category = class Category extends Shop.LoadableContent {
     }
 
     renderSubcategory (data) {
-        const photo = data.photo;
-        data.photo = photo ? photo._id : null;
+        data.photo = data.photo?._id;
         return this.resolveTemplate('subcategory', data);
     }
 
@@ -56,7 +55,7 @@ Shop.Category = class Category extends Shop.LoadableContent {
     }
 };
 
-Shop.CategoryList = class CategoryList extends Shop.LoadableContent {
+Shop.CategoryList = class CategoryList extends Shop.Loadable {
 
     getUrl () {
         return super.getUrl('list');
@@ -72,12 +71,12 @@ Shop.CategoryList = class CategoryList extends Shop.LoadableContent {
     }
 
     render (data) {
-        let items = data && data.items;
+        let items = data?.items;
         items = Array.isArray(items) ? items : [];
         items = items.map(this.renderItem, this).join('');
         return items
             ? this.resolveTemplate('list', {items})
-            : this.resolveTemplate('error', {text: Jam.i18n.translate('No categories')});
+            : this.resolveTemplate('error', {text: Jam.t('No categories')});
     }
 
     renderItem (data) {
@@ -91,7 +90,7 @@ Shop.CategoryList = class CategoryList extends Shop.LoadableContent {
 
     onDone (data) {
         super.onDone(data);
-        this.translateContainer();
+        Jam.t(this.$container);
         $(window).scrollTop(0);
     }
 };

@@ -19,7 +19,7 @@ module.exports = class CartOrderBehavior extends Base {
             return this.addItemError('Invalid items');
         }
         const ids = items.map(item => item.id);
-        const query = this.getMetaClass('item').findById(ids);
+        const query = this.getMetadataClass('item').findById(ids);
         const itemMap = await query.and({active: true}).raw().indexByKey().all();
         if (Object.values(itemMap).length !== items.length) {
             return this.addItemError('Item not found');
@@ -51,13 +51,13 @@ module.exports = class CartOrderBehavior extends Base {
     async createOrderItems (items) {
         if (Array.isArray(this._items)) {
             const order = this.owner.getId();
-            const itemClass = this.getMetaClass('orderItem');
-            for (const item of this._items) {
+            const itemClass = this.getMetadataClass('orderItem');
+            for (const {id, qty} of this._items) {
                 const model = this.owner.createByView(itemClass);
                 model.assign({
-                    order,
-                    item: itemClass.key.normalize(item.id),
-                    quantity: item.qty
+                    item: itemClass.key.normalize(id),
+                    quantity: qty,
+                    order
                 });
                 await model.insert();
             }

@@ -17,7 +17,7 @@ module.exports = {
             secret: 'shop.evado'
         },
         'i18n': {
-            // language: 'ru'
+            language: 'en'
         },
         'router': {
             // defaultModule: 'front'
@@ -47,7 +47,7 @@ module.exports = {
         'api': {
             config: {
                 modules: {
-                    'document': {
+                    'base': {
                         Class: require('evado-api-base/Module')
                     },
                     'navigation': {

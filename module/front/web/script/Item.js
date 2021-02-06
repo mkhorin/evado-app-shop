@@ -1,6 +1,6 @@
 'use strict';
 
-Shop.Item = class Item extends Shop.LoadableContent {
+Shop.Item = class Item extends Shop.Loadable {
 
     init () {
         super.init();
@@ -81,7 +81,7 @@ Shop.Item = class Item extends Shop.LoadableContent {
         const attrs = data.attrs.filter(({group}) => group === 'options');
         const result = attrs.map(this.renderOption, this).join('');
         this.find('.options-container').html(result);
-        this.translateContainer();
+        Jam.t(this.$container);
     }
 
     renderOption (attr) {
@@ -138,7 +138,7 @@ Shop.Item = class Item extends Shop.LoadableContent {
 
     setItemPhotos () {
         let photos = this.data.photos;
-        photos = photos && photos.length ? photos : this.masterData.photos;
+        photos = photos?.length ? photos : this.masterData.photos;
         if (this._lastPhotos !== photos) {
             this.find('[data-el="photos"]').html(this.renderPhotos(photos));
             this._lastPhotos = photos;
@@ -187,13 +187,12 @@ Shop.Item = class Item extends Shop.LoadableContent {
         return this.find('.has-error').length > 0;
     }
 
-    addError (name, message) {
-        message = Jam.i18n.translate(message);
-        this.getFormGroup(name).addClass('has-error').find('.error-block').html(message);
+    addError (name, message) {        
+        this.getFormGroup(name).addClass('has-error').find('.error-block').html(Jam.t(message));
     }
 };
 
-Shop.ItemList = class ItemList extends Shop.LoadableContent {
+Shop.ItemList = class ItemList extends Shop.Loadable {
 
     init () {
         super.init();
@@ -247,17 +246,16 @@ Shop.ItemList = class ItemList extends Shop.LoadableContent {
     }
 
     render (data) {
-        let items = data && data.items;
+        let items = data?.items;
         items = Array.isArray(items) ? items : [];
         items = items.map(this.renderItem, this).join('');
         return items
             ? this.resolveTemplate('list', {items})
-            : this.resolveTemplate('error', {text: Jam.i18n.translate('No items found')});
+            : this.resolveTemplate('error', {text: Jam.t('No items found')});
     }
 
     renderItem (data) {
-        const photo = data.mainPhoto;
-        data.photo = photo ? photo._id : null;
+        data.photo = data.mainPhoto?._id;
         return this.resolveTemplate('item', data);
     }
 
@@ -268,9 +266,9 @@ Shop.ItemList = class ItemList extends Shop.LoadableContent {
 
     onDone (data) {
         super.onDone(data);
-        this.pagination.setTotal(data && data.totalSize);
+        this.pagination.setTotal(data?.totalSize);
         this.$content.append(this.pagination.render());
-        this.translateContainer();
+        Jam.t(this.$container);
     }
 };
 

@@ -49,12 +49,14 @@ Shop.Cart = class Cart {
     }
 
     load () {
-        const values = store.get(this.storeKey);
-        return Array.isArray(values) ? values.map(Shop.CartItem.create, Shop.CartItem) : [];
+        const values = Jam.localStorage.get(this.storeKey);
+        return Array.isArray(values)
+            ? values.map(Shop.CartItem.create, Shop.CartItem)
+            : [];
     }
 
     save () {
-        store.set(this.storeKey, this.items.map(item => item.serialize()));
+        Jam.localStorage.set(this.storeKey, this.items.map(item => item.serialize()));
         this.shop.trigger('change:cart');
     }
 
@@ -132,7 +134,7 @@ Shop.CartItem = class CartItem {
     }
 };
 
-Shop.CartItemList = class CartItemList extends Shop.LoadableContent {
+Shop.CartItemList = class CartItemList extends Shop.Loadable {
 
     init () {
         super.init();
@@ -173,7 +175,7 @@ Shop.CartItemList = class CartItemList extends Shop.LoadableContent {
     }
 
     render (data) {
-        let items = data && data.items;
+        let items = data?.items;
         items = Array.isArray(items) ? items : [];
         this.cart.sync(items);
         items = items.map(this.renderItem, this).join('');
@@ -181,8 +183,7 @@ Shop.CartItemList = class CartItemList extends Shop.LoadableContent {
     }
 
     renderItem (data) {
-        const photo = data.mainPhoto;
-        data.photo = photo ? photo._id : null;
+        data.photo = data.mainPhoto?._id;
         const item = this.cart.getItem(data._id);
         data.qty = item.qty;
         data.price = item.getTotalPrice();
@@ -200,7 +201,7 @@ Shop.CartItemList = class CartItemList extends Shop.LoadableContent {
         } else {
             this.$content.html(this.resolveTemplate('empty'));
         }
-        this.translateContainer();
+        Jam.t(this.$container);
     }
 
     changeQty (delta, element) {
@@ -234,13 +235,11 @@ Shop.CartItemList = class CartItemList extends Shop.LoadableContent {
     }
 
     setOrderDone () {
-        this.$content.html(this.resolveTemplate('ordered'));
-        this.translateContainer(this.$content);
+        Jam.t(this.$content.html(this.resolveTemplate('ordered')));
     }
 
     setOrderError (text) {
-        this.$content.append(this.resolveTemplate('error', {text}));
-        this.translateContainer(this.$content);
+        Jam.t(this.$content.append(this.resolveTemplate('error', {text})));
     }
 };
 

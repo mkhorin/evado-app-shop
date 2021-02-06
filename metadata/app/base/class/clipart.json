@@ -11,6 +11,7 @@
       "label": "File",
       "type": "file",
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "hidden": false,

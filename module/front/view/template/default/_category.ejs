@@ -7,9 +7,9 @@
 
             <div class="page-head">
                 <ol class="breadcrumb">
-                    <li><a href="#" data-action="main" data-t="">Main</a></li>
+                    <li class="breadcrumb-item"><a href="#" data-action="main" data-t="">Main</a></li>
                     {{parent}}
-                    <li data-t="">{{name}}</li>
+                    <li class="breadcrumb-item" data-t="">{{name}}</li>
                 </ol>
                 <%- include('./_cartToggle') %>
                 <%- include('./_user') %>
@@ -29,7 +29,7 @@
         </template>
 
         <template data-id="parent">
-            <li><a href="#" data-action="category" data-id="{{parent}}">Parent</a></li>
+            <li class="breadcrumb-item"><a href="#" data-action="category" data-id="{{parent}}">Parent</a></li>
         </template>
 
         <template data-id="subcategories">
@@ -40,11 +40,11 @@
         </template>
 
         <template data-id="subcategory">
-            <div class="col-sm-3 col-lg-2">
+            <div class="col-md-3 col-lg-2">
                 <div class="category-card" data-id="{{_id}}">
                     <a href="#" data-action="category">
                         <img data-src="<%- _url('/api/base/file/download') %>?c=clipart&id={{icon}}"
-                             class="thumbnail img-responsive" alt="{{description}}">
+                             class="img-thumbnail img-fluid" alt="{{description}}">
                     </a>
                     <h4><a href="#" data-action="category">{{name}}</a></h4>
                 </div>
@@ -61,7 +61,7 @@
                         <input type="search" class="form-control" placeholder="Search for...">
                         <span class="input-group-btn">
                             <button class="btn btn-primary" type="submit">
-                                <span class="glyphicon glyphicon-search"></span>
+                                <i class="fas fa-search"></i>
                             </button>
                         </span>
                     </div>

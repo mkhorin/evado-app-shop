@@ -3,7 +3,7 @@
 class Shop {
 
     static getElementClass (name) {
-        return Shop[name] && Shop[name].prototype instanceof Shop.Element ? Shop[name] : null;
+        return Shop[name]?.prototype instanceof Shop.Element ? Shop[name] : null;
     }
 
     static toggle ($element, state) {
@@ -11,12 +11,7 @@ class Shop {
     }
 
     static getTemplate (name, container) {
-        const template = container.querySelector(`template[data-id="${name}"]`);
-        if (template) {
-            return template.innerHTML;
-        }
-        console.error(`Template not found: ${name}`);
-        return '';
+        return container.querySelector(`template[data-id="${name}"]`)?.innerHTML;
     }
 
     static resolveTemplate (text, data) {
@@ -28,9 +23,8 @@ class Shop {
 
     static setPageTitle (text) {
         const $title = $(document.head).find('title');
-        const base = $title.data('title');
-        text = Jam.i18n.translate(text);
-        $title.html(text ? `${text} - ${base}` : base);
+        const base = $title.data('title');        
+        $title.html(text ? `${Jam.t(text)} - ${base}` : base);
     }
 
     static escapeData (data, keys) {
@@ -213,10 +207,6 @@ Shop.Element = class Element {
     trigger () {
         this.$container.trigger(...arguments);
     }
-
-    translateContainer ($container) {
-        Jam.i18n.translateContainer($container || this.$container, ...arguments);
-    }
 };
 
 Shop.AjaxQueue = class AjaxQueue {
@@ -252,7 +242,7 @@ Shop.AjaxQueue = class AjaxQueue {
             return false;
         }
         const {deferred, args} = this._tasks.splice(0, 1)[0];
-        const csrf = Jam.Helper.getCsrfToken();
+        const csrf = Jam.getCsrfToken();
         const data = {csrf, ...args[1]};
         const params = {
             method: 'post',
@@ -273,14 +263,12 @@ Shop.AjaxQueue = class AjaxQueue {
     }
 
     abort () {
-        if (this._xhr) {
-            this._xhr.abort();
-            this._xhr = null;
-        }
+        this._xhr?.abort();
+        this._xhr = null;
     }
 };
 
-Shop.LoadableContent = class LoadableContent extends Shop.Element {
+Shop.Loadable = class Loadable extends Shop.Element {
 
     init () {
         this.$content = this.$container.children('.loadable-content');
@@ -326,8 +314,8 @@ Shop.LoadableContent = class LoadableContent extends Shop.Element {
     onDone (data) {
         this.toggleLoader(false);
         this.$content.html(this.render(data));
-        this.translateContainer();
-        Jam.Helper.executeSerialImageLoading($(this.container));
+        Jam.t(this.$container);
+        Jam.Helper.executeSerialImageLoading(this.$container);
     }
 
     onAfterDone () {
