@@ -1,5 +1,6 @@
-'use strict';
-
+/**
+ * @copyright Copyright (c) 2021 Maxim Khorin <maksimovichu@gmail.com>
+ */
 Shop.Search = class Search extends Shop.Element {
 
     init () {
