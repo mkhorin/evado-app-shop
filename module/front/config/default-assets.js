@@ -6,17 +6,13 @@
 module.exports = {
 
     build: [{
-        Class: 'FileMerger',
+        Class: 'Packer',
         sources: [
-            'shop/Shop.js',
-            'shop/Element.js',
-            'shop/Loadable.js',
-            'shop'
+            'src/Shop.js',
+            'src/Element.js',
+            'src/Loadable.js',
+            'src'
         ],
-        target: 'dist/shop.min.js'
-    }],
-
-    deploy: {
-        'vendor': 'dist/shop.min.js'
-    }
+        target: 'vendor/shop.min.js'
+    }]
 };
