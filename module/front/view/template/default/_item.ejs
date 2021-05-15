@@ -45,7 +45,7 @@
                                     <div class="form-control-plaintext" data-el="inStock">{{inStock}}</div>
                                 </div>
                             </div>
-                            <div class="buy-block">
+                            <div class="buy-block form-group">
                                 <div class="form-group row">
                                     <label class="col-3 col-form-label" data-t="">Quantity</label>
                                     <div class="col-9">
@@ -61,7 +61,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="buyed-block">
+                            <div class="buyed-block form-group">
                                 <div class="form-group row">
                                     <div class="col-9 offset-3">
                                         <button class="btn-success btn" data-action="cart" title="Go to cart">
@@ -94,18 +94,18 @@
         </template>
 
         <template data-id="photos">
-            <div id="item-photos" class="{{hideControls}} carousel slide mb-3" data-ride="carousel">
+            <div id="item-photos" class="{{hideControls}} carousel slide mb-3" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     {{photos}}
                 </div>
-                <a class="carousel-control-prev" href="#item-photos" role="button" data-slide="prev">
-                    <i class="fas fa-chevron-left"></i>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#item-photos" role="button" data-slide="next">
-                    <i class="fas fa-chevron-right"></i>
-                    <span class="sr-only">Next</span>
-                </a>
+                <button class="carousel-control-prev" data-bs-target="#item-photos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#item-photos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </template>
 
@@ -129,7 +129,7 @@
             <div class="form-group row">
                 <label class="col-3 col-form-label" data-t="">{{label}}</label>
                 <div class="col-9">
-                    <select class="option-control form-control" name="{{name}}">
+                    <select class="option-control form-select" name="{{name}}">
                         <option value=""></option>
                         {{values}}
                     </select>
