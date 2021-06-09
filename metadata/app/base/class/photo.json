@@ -14,7 +14,7 @@
       "history": false,
       "multiple": false,
       "options": {
-        "thumbnail": "tiny"
+        "thumbnail": "xs"
       },
       "orderNumber": 10,
       "sortable": false,

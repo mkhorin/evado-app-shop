@@ -4,7 +4,7 @@
       "$oid": "5e892fd0e0d4991d904563a9"
     },
     "name": "car.svg",
-    "mime": "image/svg+xml",
+    "type": "image/svg+xml",
     "size": 2021,
     "file": "2020-04/5e892fd0e0d4991d904563a8",
     "createdAt": {
@@ -22,7 +22,7 @@
       "$oid": "5e892ff2e0d4991d904563ab"
     },
     "name": "clock.svg",
-    "mime": "image/svg+xml",
+    "type": "image/svg+xml",
     "size": 4311,
     "file": "2020-04/5e892ff2e0d4991d904563aa",
     "createdAt": {
@@ -40,7 +40,7 @@
       "$oid": "5e892ffae0d4991d904563ae"
     },
     "name": "coat.svg",
-    "mime": "image/svg+xml",
+    "type": "image/svg+xml",
     "size": 5043,
     "file": "2020-04/5e892ffae0d4991d904563ad",
     "createdAt": {
@@ -58,7 +58,7 @@
       "$oid": "5e893007e0d4991d904563b1"
     },
     "name": "hairdryer.svg",
-    "mime": "image/svg+xml",
+    "type": "image/svg+xml",
     "size": 7548,
     "file": "2020-04/5e893007e0d4991d904563b0",
     "createdAt": {
@@ -76,7 +76,7 @@
       "$oid": "5e893012e0d4991d904563b4"
     },
     "name": "hat.svg",
-    "mime": "image/svg+xml",
+    "type": "image/svg+xml",
     "size": 2540,
     "file": "2020-04/5e893012e0d4991d904563b3",
     "createdAt": {
@@ -94,7 +94,7 @@
       "$oid": "5e89305fe0d4991d904563b7"
     },
     "name": "kettle.svg",
-    "mime": "image/svg+xml",
+    "type": "image/svg+xml",
     "size": 3037,
     "file": "2020-04/5e89305fe0d4991d904563b6",
     "createdAt": {
@@ -112,7 +112,7 @@
       "$oid": "5e893069e0d4991d904563ba"
     },
     "name": "moto.svg",
-    "mime": "image/svg+xml",
+    "type": "image/svg+xml",
     "size": 11674,
     "file": "2020-04/5e893069e0d4991d904563b9",
     "createdAt": {
@@ -130,7 +130,7 @@
       "$oid": "5e89309de0d4991d904563bd"
     },
     "name": "shirt.svg",
-    "mime": "image/svg+xml",
+    "type": "image/svg+xml",
     "size": 2153,
     "file": "2020-04/5e89309de0d4991d904563bc",
     "createdAt": {
@@ -148,7 +148,7 @@
       "$oid": "5e8930a4e0d4991d904563c0"
     },
     "name": "truck.svg",
-    "mime": "image/svg+xml",
+    "type": "image/svg+xml",
     "size": 2523,
     "file": "2020-04/5e8930a4e0d4991d904563bf",
     "createdAt": {
@@ -166,7 +166,7 @@
       "$oid": "5e8930aae0d4991d904563c3"
     },
     "name": "vehicle.svg",
-    "mime": "image/svg+xml",
+    "type": "image/svg+xml",
     "size": 4623,
     "file": "2020-04/5e8930aae0d4991d904563c2",
     "createdAt": {
@@ -184,7 +184,7 @@
       "$oid": "5e89332de0d4991d904563c6"
     },
     "name": "clothes.svg",
-    "mime": "image/svg+xml",
+    "type": "image/svg+xml",
     "size": 2648,
     "file": "2020-04/5e89332de0d4991d904563c5",
     "createdAt": {
@@ -202,7 +202,7 @@
       "$oid": "5e893334e0d4991d904563c9"
     },
     "name": "electronics.svg",
-    "mime": "image/svg+xml",
+    "type": "image/svg+xml",
     "size": 2343,
     "file": "2020-04/5e893334e0d4991d904563c8",
     "createdAt": {
@@ -220,7 +220,7 @@
       "$oid": "5e8abd2e8c87622134b1217e"
     },
     "name": "shirt-casual-red-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 10912,
     "file": "2020-04/5e8abd2e8c87622134b1217d",
     "createdAt": {
@@ -238,7 +238,7 @@
       "$oid": "5e8ac75884acee1a9809d3b9"
     },
     "name": "shirt-casual-blue-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 11488,
     "file": "2020-04/5e8ac75884acee1a9809d3b8",
     "createdAt": {
@@ -256,7 +256,7 @@
       "$oid": "5e8ac88784acee1a9809d3bd"
     },
     "name": "shirt-casual-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 12288,
     "file": "2020-04/5e8ac88784acee1a9809d3bc",
     "createdAt": {
@@ -274,7 +274,7 @@
       "$oid": "5e8acb9684acee1a9809d3c2"
     },
     "name": "shirt-office-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 10022,
     "file": "2020-04/5e8acb9684acee1a9809d3c1",
     "createdAt": {
@@ -292,7 +292,7 @@
       "$oid": "5e8acba684acee1a9809d3c5"
     },
     "name": "shirt-office-blue-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 11545,
     "file": "2020-04/5e8acba684acee1a9809d3c4",
     "createdAt": {
@@ -310,7 +310,7 @@
       "$oid": "5e8acbb284acee1a9809d3c8"
     },
     "name": "shirt-office-green-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 11526,
     "file": "2020-04/5e8acbb284acee1a9809d3c7",
     "createdAt": {
@@ -328,7 +328,7 @@
       "$oid": "5e8ad00e84acee1a9809d3ce"
     },
     "name": "shirt-sport-green-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 9089,
     "file": "2020-04/5e8ad00e84acee1a9809d3cd",
     "createdAt": {
@@ -346,7 +346,7 @@
       "$oid": "5e8ad04d84acee1a9809d3d1"
     },
     "name": "shirt-sport-yellow-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 9155,
     "file": "2020-04/5e8ad04d84acee1a9809d3d0",
     "createdAt": {
@@ -364,7 +364,7 @@
       "$oid": "5e8ade130ad55f0c3ca55ae9"
     },
     "name": "kettle-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 11262,
     "file": "2020-04/5e8ade130ad55f0c3ca55ae8",
     "createdAt": {
@@ -382,7 +382,7 @@
       "$oid": "5e8ae48e0ad55f0c3ca55b23"
     },
     "name": "kettle-02.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 8710,
     "file": "2020-04/5e8ae48e0ad55f0c3ca55b22",
     "createdAt": {
@@ -400,7 +400,7 @@
       "$oid": "5e8aee3fa9131b1970d25f81"
     },
     "name": "kettle-04.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 13184,
     "file": "2020-04/5e8aee3fa9131b1970d25f80",
     "createdAt": {
@@ -418,7 +418,7 @@
       "$oid": "5e8bbe3885419b19049a54e1"
     },
     "name": "coat-winter.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 11457,
     "file": "2020-04/5e8bbe3885419b19049a54e0",
     "createdAt": {
@@ -436,7 +436,7 @@
       "$oid": "5e8bbe4b85419b19049a54e4"
     },
     "name": "coat-winter-blue-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 12217,
     "file": "2020-04/5e8bbe4b85419b19049a54e3",
     "createdAt": {
@@ -454,7 +454,7 @@
       "$oid": "5e8bbe5a85419b19049a54e7"
     },
     "name": "coat-winter-red-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 12367,
     "file": "2020-04/5e8bbe5a85419b19049a54e6",
     "createdAt": {
@@ -472,7 +472,7 @@
       "$oid": "5e8bc0c785419b19049a54ef"
     },
     "name": "coat-autumn-yellow-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 12558,
     "file": "2020-04/5e8bc0c785419b19049a54ee",
     "createdAt": {
@@ -490,7 +490,7 @@
       "$oid": "5e8bd31185419b19049a5594"
     },
     "name": "moto-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 13678,
     "file": "2020-04/5e8bd31185419b19049a5593",
     "createdAt": {
@@ -508,7 +508,7 @@
       "$oid": "5e8bd64c01733d1ef02418d6"
     },
     "name": "moto-03.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 13259,
     "file": "2020-04/5e8bd64c01733d1ef02418d5",
     "createdAt": {
@@ -526,7 +526,7 @@
       "$oid": "5e8bd79a01733d1ef02418da"
     },
     "name": "truck-03.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 10253,
     "file": "2020-04/5e8bd79a01733d1ef02418d9",
     "createdAt": {
@@ -544,7 +544,7 @@
       "$oid": "5e8bd90101733d1ef02418e0"
     },
     "name": "truck-01.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 16804,
     "file": "2020-04/5e8bd90101733d1ef02418df",
     "createdAt": {

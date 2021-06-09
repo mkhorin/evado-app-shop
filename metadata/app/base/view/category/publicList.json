@@ -19,7 +19,7 @@
     {
       "name": "icon",
       "options": {
-        "thumbnail": "tiny"
+        "thumbnail": "xs"
       },
       "orderNumber": 50
     }

@@ -11,7 +11,7 @@
     "file": "2020-04/5e8abd2e8c87622134b1217d",
     "description": "Red casual shirt",
     "_size": 10912,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T05:25:25.518Z"
     },
@@ -35,7 +35,7 @@
     "file": "2020-04/5e8ac75884acee1a9809d3b8",
     "description": "Blue casual shirt",
     "_size": 11488,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T06:08:26.348Z"
     },
@@ -59,7 +59,7 @@
     "file": "2020-04/5e8ac88784acee1a9809d3bc",
     "description": "Casual shirt",
     "_size": 12288,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T06:13:36.006Z"
     },
@@ -83,7 +83,7 @@
     "file": "2020-04/5e8acb9684acee1a9809d3c1",
     "description": "Office shirt",
     "_size": 10022,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T06:26:40.344Z"
     }
@@ -100,7 +100,7 @@
     "file": "2020-04/5e8acba684acee1a9809d3c4",
     "description": "Blue office shirt",
     "_size": 11545,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T06:26:53.968Z"
     }
@@ -117,7 +117,7 @@
     "file": "2020-04/5e8acbb284acee1a9809d3c7",
     "description": "Green office shirt",
     "_size": 11526,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T06:27:07.012Z"
     }
@@ -134,7 +134,7 @@
     "file": "2020-04/5e8ad00e84acee1a9809d3cd",
     "description": "Emerald sport shirt",
     "_size": 9089,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T06:46:28.362Z"
     }
@@ -151,7 +151,7 @@
     "file": "2020-04/5e8ad04d84acee1a9809d3d0",
     "description": "Orange sport shirt",
     "_size": 9155,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T06:47:03.456Z"
     },
@@ -174,7 +174,7 @@
     "file": "2020-04/5e8ade130ad55f0c3ca55ae8",
     "description": "Hairdryer",
     "_size": 11262,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T07:45:35.321Z"
     }
@@ -191,7 +191,7 @@
     "file": "2020-04/5e8ae48e0ad55f0c3ca55b22",
     "description": "Sad kettle",
     "_size": 8710,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T08:14:43.045Z"
     }
@@ -208,7 +208,7 @@
     "file": "2020-04/5e8aee3fa9131b1970d25f80",
     "description": "Furious kettle",
     "_size": 13184,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T08:55:09.208Z"
     }
@@ -225,7 +225,7 @@
     "file": "2020-04/5e8bbe3885419b19049a54e0",
     "description": "Hooded coat",
     "_size": 11457,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T23:41:53.313Z"
     }
@@ -242,7 +242,7 @@
     "file": "2020-04/5e8bbe4b85419b19049a54e3",
     "description": "Blue hooded coat",
     "_size": 12217,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T23:42:11.667Z"
     }
@@ -259,7 +259,7 @@
     "file": "2020-04/5e8bbe5a85419b19049a54e6",
     "description": "Red hooded coat",
     "_size": 12367,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T23:42:27.888Z"
     }
@@ -276,7 +276,7 @@
     "file": "2020-04/5e8bc0c785419b19049a54ee",
     "description": "Sun hoodie",
     "_size": 12558,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-06T23:52:45.505Z"
     }
@@ -293,7 +293,7 @@
     "file": "2020-04/5e8bd31185419b19049a5593",
     "description": "Ninja horse",
     "_size": 13678,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-07T01:10:49.877Z"
     }
@@ -310,7 +310,7 @@
     "file": "2020-04/5e8bd64c01733d1ef02418d5",
     "description": "True moto",
     "_size": 13259,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-07T01:25:40.081Z"
     }
@@ -327,7 +327,7 @@
     "file": "2020-04/5e8bd79a01733d1ef02418d9",
     "description": "Mammoth truck",
     "_size": 10253,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-07T01:30:06.235Z"
     }
@@ -344,7 +344,7 @@
     "file": "2020-04/5e8bd90101733d1ef02418df",
     "description": "Cement mixer truck",
     "_size": 16804,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_createdAt": {
       "$date": "2020-04-07T01:36:11.092Z"
     }
