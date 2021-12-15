@@ -1,108 +1,102 @@
+<template id="order">
+    <div class="order page">
 
-<div class="page" data-page="order" data-handler="OrderPage">
+        <breadcrumbs :cart="cart">
+            <template #path>
+                <li class="breadcrumb-item">
+                    <a @click.prevent="toMain" href="#" data-t="">Main</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a @click.prevent="toOrders" href="#" data-t="">Orders</a>
+                </li>
+                <li class="breadcrumb-item" data-t="">Order</li>
+            </template>
+        </breadcrumbs>
 
-    <div class="order loadable-container" data-handler="Order">
+        <div class="loadable-container">
+            <template v-show="!loading">
 
-        <template data-id="order">
-            <div class="page-head">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#" data-action="main" data-t="">Main</a></li>
-                    <li class="breadcrumb-item"><a href="#" data-action="orders" data-t="">Orders</a></li>
-                    <li class="breadcrumb-item" data-t="">#{{_id}}</li>
-                </ol>
-                <%- include('./_cartToggle') %>
-                <%- include('./_user') %>
-            </div>
+                <h1><span data-t="">Order</span> #{{id}}</h1>
 
-            <h1>
-                <span data-t="">Order</span>
-                #{{_id}}
-            </h1>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="form">
-                        <div class="form-group row">
-                            <label class="col-4 col-form-label" data-t="">Agreed</label>
-                            <div class="col-8">
-                                <div class="form-control-plaintext">{{agreed}}</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form">
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label" data-t="">Created at</label>
+                                <div class="col-8">
+                                    <div class="form-control-plaintext">{{date | datetime}}</div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label" data-t="">Agreed</label>
+                                <div class="col-8">
+                                    <div class="form-control-plaintext">{{agreed | boolean}}</div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label" data-t="">Paid</label>
+                                <div class="col-8">
+                                    <div class="form-control-plaintext">{{paid | boolean}}</div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label" data-t="">Shipped</label>
+                                <div class="col-8">
+                                    <div class="form-control-plaintext">{{shipped | boolean}}</div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label" data-t="">Cancelled</label>
+                                <div class="col-8">
+                                    <div class="form-control-plaintext">{{cancelled | boolean}}</div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-4 col-form-label" data-t="">Total price</label>
+                                <div class="col-8">
+                                    <div class="form-control-plaintext"><b>{{total}}</b></div>
+                                </div>
+                            </div>
+                            <div v-if="!agreed" class="form-group row">
+                                <div class="offset-4 col-8">
+                                    <button @click="onDelete" class="btn-danger btn" type="button">
+                                        <span data-t="">Delete order</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label class="col-4 col-form-label" data-t="">Paid</label>
-                            <div class="col-8">
-                                <div class="form-control-plaintext">{{paid}}</div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-4 col-form-label" data-t="">Shipped</label>
-                            <div class="col-8">
-                                <div class="form-control-plaintext">{{shipped}}</div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-4 col-form-label" data-t="">Created at</label>
-                            <div class="col-8">
-                                <div class="form-control-plaintext">{{date}}</div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-4 col-form-label" data-t="">Total price</label>
-                            <div class="col-8">
-                                <div class="form-control-plaintext"><b>{{total}}</b></div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="offset-4 col-8">
-                                {{deletion}}
+                    </div>
+                    <div class="col-md-8">
+                        <div class="item-list">
+                            <div v-for="item of items" :key="item.id" class="row-item">
+                                <div class="cell">
+                                    <a v-if="item.photo" @click.prevent="onItem(item.itemId)" href="#">
+                                        <img :src="item.photo" class="img-fluid img-thumbnail" alt="">
+                                    </a>
+                                </div>
+                                <div class="cell">
+                                    <label data-t="">Name</label>
+                                    <div class="value">
+                                        <a @click.prevent="onItem(item.itemId)" href="#">{{item.name}}</a>
+                                    </div>
+                                </div>
+                                <div class="cell">
+                                    <label data-t="">Quantity</label>
+                                    <div class="value">{{item.qty}}</div>
+                                </div>
+                                <div class="cell">
+                                    <label data-t="">Price</label>
+                                    <div class="value">{{item.price}}</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="item-list">
-                        {{items}}
-                    </div>
-                </div>
+            </template>
+
+            <div v-show="loading" class="loader">
+                <i class="fa fa-spinner fa-spin"></i>
             </div>
-        </template>
-
-        <template data-id="item">
-            <div class="row-item" data-id="{{id}}">
-                <div class="cell">
-                    <a href="#" data-action="item" title="{{name}}">
-                        <img src="<%- _url('/api/base/file/thumbnail') %>?s=xs&c=photo&id={{photo}}"
-                             class="img-fluid img-thumbnail" alt="">
-                    </a>
-                </div>
-                <div class="cell">
-                    <label data-t="">Name</label>
-                    <div class="value">
-                        <a href="#" data-action="item" title="{{name}}">{{name}}</a>
-                    </div>
-                </div>
-                <div class="cell">
-                    <label data-t="">Quantity</label>
-                    <div class="value">{{qty}}</div>
-                </div>
-                <div class="cell">
-                    <label data-t="">Price</label>
-                    <div class="value">{{price}}</div>
-                </div>
-            </div>
-        </template>
-
-        <template data-id="deletion">
-            <button class="btn-danger btn" type="button" data-action="deleteOrder">
-                <span data-t="">Delete order</span>
-            </button>
-        </template>
-
-        <template data-id="error">
-            <div class="alert-danger alert">{{text}}</div>
-        </template>
-
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+        </div>
     </div>
-</div>
+</template>

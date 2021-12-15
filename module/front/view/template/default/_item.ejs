@@ -1,143 +1,120 @@
+<template id="item">
+    <div class="page">
+        <div class="loadable-container">
+            <template v-if="!loading && id">
 
-<div class="page" data-page="item" data-handler="ItemPage">
+                <breadcrumbs :cart="cart">
+                    <template #path>
+                        <li class="breadcrumb-item">
+                            <a @click.prevent="toMain" href="#" data-t="">Main</a>
+                        </li>
+                        <li v-if="category" class="breadcrumb-item">
+                            <a @click.prevent="onCategory(category)" href="#">{{categoryTitle}}</a>
+                        </li>
+                        <li class="breadcrumb-item" data-t="">{{name}}</li>
+                    </template>
+                </breadcrumbs>
 
-    <div class="item loadable-container" data-handler="Item">
+                <h1>{{name}}</h1>
+                <h4 class="subtitle">{{brief}}</h4>
 
-        <template data-id="item">
-            <div class="page-head">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#" data-action="main" data-t="">Main</a></li>
-                    {{category}}
-                    <li class="breadcrumb-item" data-t="">{{name}}</li>
-                </ol>
-                <%- include('./_cartToggle') %>
-                <%- include('./_user') %>
-            </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form">
 
-            <h1 data-el="name">{{name}}</h1>
-
-            <h4 class="subtitle" data-el="brief">{{brief}}</h4>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form">
-
-                        <fieldset class="form-set" data-el="options">
-                            <legend data-t="">Options</legend>
-                            <div class="options-container">
-                                <div class="text-center">
-                                    <span class="fa-spinner fa-spin fa"></span>
+                            <fieldset v-if="options.length" class="form-set">
+                                <legend data-t="">Options</legend>
+                                <div class="options-container">
+                                    <div v-for="item of options" class="form-group row">
+                                        <label class="col-3 col-form-label" data-t="">{{item.label}}</label>
+                                        <div class="col-9">
+                                            <select v-if="item.values.length > 1"
+                                                    v-model="optionValues[item.name]"
+                                                    class="option-control form-select">
+                                                <option value=""></option>
+                                                <option v-for="value of item.values">{{value}}</option>
+                                            </select>
+                                            <div v-else class="form-control-plaintext">{{item.values[0]}}</div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </fieldset>
+                            </fieldset>
 
-                        <fieldset class="form-set" data-el="data">
-                            <legend data-t="">Data</legend>
-                            <div class="form-group row">
-                                <label class="col-3 col-form-label" data-t="">Price</label>
-                                <div class="col-9">
-                                    <div class="form-control-plaintext" data-el="price">{{price}}</div>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-3 col-form-label" data-t="">In stock</label>
-                                <div class="col-9">
-                                    <div class="form-control-plaintext" data-el="inStock">{{inStock}}</div>
-                                </div>
-                            </div>
-                            <div class="buy-block form-group">
+                            <fieldset v-if="activeVariant" class="form-set">
+                                <legend data-t="">Data</legend>
                                 <div class="form-group row">
-                                    <label class="col-3 col-form-label" data-t="">Quantity</label>
+                                    <label class="col-3 col-form-label" data-t="">Price</label>
                                     <div class="col-9">
-                                        <input type="number" class="form-control" name="qty" value="1">
-                                        <div class="error-block"></div>
+                                        <div class="form-control-plaintext">{{price}}</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <div class="col-9 offset-3">
-                                        <button type="button" class="btn-primary btn" data-action="buy">
-                                            <span data-t="">Add to cart</span>
-                                        </button>
+                                    <label class="col-3 col-form-label" data-t="">In stock</label>
+                                    <div class="col-9">
+                                        <div class="form-control-plaintext">{{inStock}}</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="buyed-block form-group">
-                                <div class="form-group row">
-                                    <div class="col-9 offset-3">
-                                        <button class="btn-success btn" data-action="cart" title="Go to cart">
-                                            <span data-t="">Item in cart</span>
-                                        </button>
+                                <div v-if="inCart" class="buyed-block form-group">
+                                    <div class="form-group row">
+                                        <div class="col-9 offset-3">
+                                            <button @click="onCart" class="btn-success btn" title="Go to cart">
+                                                <span data-t="">Item in cart</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
+                                <div v-else class="buy-block form-group">
+                                    <div class="form-group row required">
+                                        <label class="col-3 col-form-label" data-t="">Quantity</label>
+                                        <div class="col-9">
+                                            <input v-model.number="qty" type="number" class="form-control">
+                                            <div class="error-block"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-9 offset-3">
+                                            <button @click="onBuy" type="button" class="btn-primary btn">
+                                                <span data-t="">Add to cart</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div v-if="photos.length" id="item-photos" class="carousel slide mb-3" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div v-for="(item, index) of photos"
+                                     :class="{'active': !index, 'carousel-item': true}"
+                                     :key="item.id">
+                                    <img :src="item.url" class="d-block w-100 img-fluid img-thumbnail" alt="">
+                                </div>
                             </div>
-                        </fieldset>
+                            <template v-if="photos.length > 1">
+                                <button class="carousel-control-prev" data-bs-target="#item-photos" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" data-bs-target="#item-photos" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </template>
+                        </div>
+                        <div class="description">
+                            <fieldset class="form-set">
+                                <legend data-t="">Description</legend>
+                                <div>{{description}}</div>
+                            </fieldset>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div data-el="photos"></div>
-                    <div class="description">
-                        <fieldset class="form-set">
-                            <legend data-t="">Description</legend>
-                            <div data-el="description"></div>
-                        </fieldset>
-                    </div>
-                </div>
+            </template>
+
+            <div v-show="loading" class="loader">
+                <i class="fa fa-spinner fa-spin"></i>
             </div>
-        </template>
-
-        <template data-id="category">
-            <li class="breadcrumb-item"><a href="#" data-action="category" data-id="{{_id}}">{{name}}</a></li>
-        </template>
-
-        <template data-id="error">
-            <div class="alert-danger alert">{{text}}</div>
-        </template>
-
-        <template data-id="photos">
-            <div id="item-photos" class="{{hideControls}} carousel slide mb-3" data-bs-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    {{photos}}
-                </div>
-                <button class="carousel-control-prev" data-bs-target="#item-photos" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" data-bs-target="#item-photos" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </template>
-
-        <template data-id="photo">
-            <div class="carousel-item {{active}}">
-                <img src="<%- _url('/api/base/file/thumbnail') %>?s=lg&c=photo&id={{_id}}"
-                     class="d-block w-100 img-fluid img-thumbnail" alt="">
-            </div>
-        </template>
-
-        <template data-id="optionStatic">
-            <div class="form-group row">
-                <label class="col-3 col-form-label" data-t="">{{label}}</label>
-                <div class="col-9">
-                    <div class="form-control-plaintext">{{value}}</div>
-                </div>
-            </div>
-        </template>
-
-        <template data-id="optionSelect">
-            <div class="form-group row">
-                <label class="col-3 col-form-label" data-t="">{{label}}</label>
-                <div class="col-9">
-                    <select class="option-control form-select" name="{{name}}">
-                        <option value=""></option>
-                        {{values}}
-                    </select>
-                </div>
-            </div>
-        </template>
-
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+        </div>
     </div>
-</div>
+</template>

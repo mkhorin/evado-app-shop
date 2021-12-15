@@ -1,20 +1,7 @@
-
-<div class="page" data-page="search" data-handler="SearchPage">
-
-    <div class="page-head">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#" data-action="main" data-t="">Main</a></li>
-            <li class="breadcrumb-item" data-t="">Search</li>
-        </ol>
-        <%- include('./_cartToggle') %>
-        <%- include('./_user') %>
-    </div>
-
-    <h1 data-t="">Search items</h1>
-
-    <form class="search-form" data-handler="Search">
+<template id="search">
+    <form @submit.prevent="onSubmit" class="search-form">
         <div class="input-group">
-            <input type="search" class="form-control" placeholder="Search for...">
+            <input v-model="text" type="search" class="form-control" placeholder="Search for...">
             <span class="input-group-btn">
                 <button class="btn btn-primary" type="submit">
                     <i class="fas fa-search"></i>
@@ -22,21 +9,4 @@
             </span>
         </div>
     </form>
-
-    <div class="item-list loadable-container" data-handler="SearchItemList">
-
-        <template data-id="list">
-            <div class="row">{{items}}</div>
-        </template>
-
-        <template data-id="error">
-            <div class="alert-danger alert">{{text}}</div>
-        </template>
-
-        <%- include('./_itemCard') %>
-        <%- include('./_pagination') %>
-
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
-    </div>
-</div>
+</template>

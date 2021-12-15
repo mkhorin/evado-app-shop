@@ -41,7 +41,7 @@
       "orderNumber": 70
     },
     {
-      "name": "slaves",
+      "name": "variants",
       "eagerDepth": 2,
       "eagerLoading": true,
       "eagerView": "publicView",

@@ -8,6 +8,7 @@ Object.assign(Jam.I18n.defaults, {
     'Cancelled': 'Отменен',
     'Cart': 'Корзина',
     'Clothes': 'Одежда',
+    'Color': 'Цвет',
 
     'Delete order': 'Удалить заказ',
     'Delete this order permanently?': 'Удалить этот заказ безвозвратно?',
@@ -17,6 +18,8 @@ Object.assign(Jam.I18n.defaults, {
     'Fabric': 'Материал',
 
     'In stock': 'В наличии',
+    'Increase quantity': 'Добавить количество',
+    'Invalid quantity': 'Недопустимое количество',
     'Item in cart': 'Товар в корзине',
     'Items': 'Товары',
 
@@ -28,10 +31,15 @@ Object.assign(Jam.I18n.defaults, {
     'Orders': 'Заказы',
 
     'Paid': 'Оплачен',
+    'Parent category': 'Родительская категория',
     'Power': 'Мощность',
     'Price': 'Цена',
 
+    'Reduce quantity': 'Уменьшить количество',
+    'Remove this item from cart?': 'Убрать этот товар из корзины?',
+
     'Quantity': 'Количество',
+    'Quantity exceeds stock': 'Количество товара превышает запас',
 
     'Search for...': 'Искать...',
     'Shipped': 'Отправлен',

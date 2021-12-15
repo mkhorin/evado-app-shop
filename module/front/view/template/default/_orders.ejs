@@ -1,67 +1,59 @@
+<template id="orders">
+    <div class="page">
 
-<div class="page" data-page="orders" data-handler="OrdersPage">
+        <breadcrumbs :cart="cart">
+            <template #path>
+                <li class="breadcrumb-item">
+                    <a @click.prevent="toMain" href="#" data-t="">Main</a>
+                </li>
+                <li class="breadcrumb-item" data-t="">Orders</li>
+            </template>
+        </breadcrumbs>
 
-    <div class="page-head">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#" data-action="main" data-t="">Main</a></li>
-            <li class="breadcrumb-item" data-t="">Orders</li>
-        </ol>
-        <%- include('./_cartToggle') %>
-        <%- include('./_user') %>
-    </div>
+        <h1 data-t="">Orders</h1>
 
-    <h1 data-t="">Orders</h1>
+        <div class="loadable-container">
 
-    <div class="order-list loadable-container" data-handler="OrderList">
-
-        <template data-id="list">
-            <div class="order-items">{{items}}</div>
-        </template>
-
-        <template data-id="item">
-            <div class="order-item row-item" data-id="{{_id}}">
-                <div class="order-item-id cell">
-                    <label data-t="">Order number</label>
-                    <div class="value">
-                        <a href="#" data-action="detail" title="{{_id}}">#{{_id}}</a>
+            <div v-if="!empty" class="order-items">
+                <div v-for="item of items" :key="item.id" class="order-item row-item">
+                    <div class="order-item-id cell">
+                        <label data-t="">Order number</label>
+                        <div class="value">
+                            <a @click.prevent="onDetails(item.id)" href="#">#{{item.id}}</a>
+                        </div>
+                    </div>
+                    <div class="order-item-agreed cell">
+                        <label data-t="">Agreed</label>
+                        <div class="value">{{item.agreed | boolean}}</div>
+                    </div>
+                    <div class="order-item-paid cell">
+                        <label data-t="">Paid</label>
+                        <div class="value">{{item.paid | boolean}}</div>
+                    </div>
+                    <div class="order-item-shipped cell">
+                        <label data-t="">Shipped</label>
+                        <div class="value">{{item.shipped | boolean}}</div>
+                    </div>
+                    <div class="order-item-cancelled cell">
+                        <label data-t="">Cancelled</label>
+                        <div class="value">{{item.cancelled | boolean}}</div>
+                    </div>
+                    <div class="order-item-date cell">
+                        <label data-t="">Created at</label>
+                        <div class="value">{{item.date | datetime}}</div>
                     </div>
                 </div>
-                <div class="order-item-agreed cell">
-                    <label data-t="">Agreed</label>
-                    <div class="value">{{agreed}}</div>
-                </div>
-                <div class="order-item-paid cell">
-                    <label data-t="">Paid</label>
-                    <div class="value">{{paid}}</div>
-                </div>
-                <div class="order-item-shipped cell">
-                    <label data-t="">Shipped</label>
-                    <div class="value">{{shipped}}</div>
-                </div>
-                <div class="order-item-cancelled cell">
-                    <label data-t="">Cancelled</label>
-                    <div class="value">{{cancelled}}</div>
-                </div>
-                <div class="order-item-date cell">
-                    <label data-t="">Created at</label>
-                    <div class="value">{{date}}</div>
-                </div>
             </div>
-        </template>
 
-        <%- include('./_pagination') %>
+            <pagination></pagination>
 
-        <template data-id="empty">
-            <div class="alert-warning alert">
+            <div v-show="!loading && empty" class="alert-warning alert">
                 <span data-t="">You have no orders</span>
             </div>
-        </template>
 
-        <template data-id="error">
-            <div class="alert-danger alert">{{text}}</div>
-        </template>
-
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+            <div v-show="loading" class="loader">
+                <i class="fa fa-spinner fa-spin"></i>
+            </div>
+        </div>
     </div>
-</div>
+</template>

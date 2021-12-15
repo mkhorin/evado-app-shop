@@ -259,10 +259,10 @@
       "unique": false
     },
     {
-      "name": "slaves",
-      "label": "Slave items",
+      "name": "variants",
+      "label": "Variant items",
       "type": "backref",
-      "description": "Items nested  in the master item",
+      "description": "Variants of the main item",
       "commands": [
         "add",
         "remove",

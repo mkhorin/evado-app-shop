@@ -1,30 +1,50 @@
 <%
 layout(_view.get('_layout/content'));
 
-script('front/vendor/shop.min.js');
-script('front/script/module.js');
+script('front/vendor/vue/vue.js');
 
-const dataUrl = _url('/api/base/data/');
-const metaUrl = _url('/api/base/meta/');
+script('front/script/Cart.js');
+script('front/script/CartItem.js');
+
+script('front/script/breadcrumbs.js');
+script('front/script/categories.js');
+script('front/script/category.js');
+script('front/script/item.js');
+script('front/script/items.js');
+script('front/script/myCart.js');
+script('front/script/mixin.js');
+script('front/script/order.js');
+script('front/script/orders.js');
+script('front/script/pagination.js');
+script('front/script/search.js');
+script('front/script/front.js');
+
+const user = _controller.user;
 %>
+
+<%- include('./_breadcrumbs') %>
+<%- include('./_categories') %>
+<%- include('./_category') %>
+<%- include('./_item') %>
+<%- include('./_items') %>
+<%- include('./_myCart') %>
+<%- include('./_order') %>
+<%- include('./_orders') %>
+<%- include('./_pagination') %>
+<%- include('./_search') %>
 
 <%- include(_view.get('_part/signboard')) %>
 
-<div class="shop"
-     data-guest="<%- _controller.user.isGuest() %>"
-     data-list="<%- dataUrl + 'list' %>"
-     data-read="<%- dataUrl + 'read' %>"
-     data-create="<%- dataUrl + 'create' %>"
-     data-update="<%- dataUrl + 'update' %>"
-     data-delete="<%- dataUrl + 'delete' %>"
-     data-meta-class="<%- metaUrl + 'class' %>">
+<div id="front"
+     data-user-id="<%- user.getId() %>"
+     data-auth-url="<%- _url('/auth/sign-in?returnUrl=/front') %>"
+     data-data-url="<%- _url('/api/base/data') %>"
+     data-file-url="<%- _url('/api/base/file') %>"
+     data-meta-url="<%- _url('/api/base/meta') %>"
+     data-thumbnail-url="<%- _url('/api/base/file/thumbnail') %>"
+     data-csrf="<%- _controller.getCsrfToken() %>">
 
-    <%- include('./_main') %>
-    <%- include('./_item') %>
-    <%- include('./_category') %>
-    <%- include('./_search') %>
-    <%- include('./_cart') %>
-    <%- include('./_orders') %>
-    <%- include('./_order') %>
-
+    <keep-alive include="categories">
+        <componen :is="activePage" v-bind="activePageProps"></componen>
+    </keep-alive>
 </div>
