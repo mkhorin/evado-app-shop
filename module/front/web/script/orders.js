@@ -46,9 +46,9 @@ Vue.component('orders', {
             return items.map(item => ({
                 id: item._id,
                 agreed: item.agreed,
-                paid: Jam.FormatHelper.asBoolean(item.paid),
-                shipped: Jam.FormatHelper.asBoolean(item.shipped),
-                cancelled: Jam.FormatHelper.asBoolean(item.cancelled),
+                paid: item.paid,
+                shipped: item.shipped,
+                cancelled: item.cancelled,
                 date: item._createdAt
             }));
         },
