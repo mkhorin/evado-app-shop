@@ -41,7 +41,12 @@ Vue.component('my-cart', {
             await Jam.dialog.confirm('Remove this item from cart?');
             item.cartItem.remove();
         },
-        async onOrder () {
+        onOrder () {
+            if (this.requireAuth()) {
+                this.createOrder();
+            }
+        },
+        async createOrder () {
             try {
                 const items = this.formatItemsForOrder();
                 await this.fetchText('create', {
