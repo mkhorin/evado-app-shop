@@ -19,7 +19,7 @@ Vue.component('item', {
             optionValues: {},
             photos: [],
             activeVariant: null,
-            qty: 1
+            quantity: 1
         };
     },
     computed: {
@@ -42,13 +42,13 @@ Vue.component('item', {
             if (result !== true) {
                 return this.showError(result);
             }
-            this.cart.add(this.activeVariant.id, this.qty);
+            this.cart.add(this.activeVariant.id, this.quantity);
         },
         validate () {
-            if (!Number.isInteger(this.qty) || this.qty < 1) {
+            if (!Number.isInteger(this.quantity) || this.quantity < 1) {
                 return 'Invalid quantity';
             }
-            if (this.qty > this.inStock) {
+            if (this.quantity > this.inStock) {
                 return 'Quantity exceeds stock';
             }
             return true;
@@ -76,7 +76,7 @@ Vue.component('item', {
             this.categoryTitle = data.category?._title;
             this.variants = this.formatVariants(data);
             this.options = this.formatOptions(data, meta);
-            this.qty = 1;
+            this.quantity = 1;
         },
         formatVariants (data) {
             data.variants.splice(0, 0, data);

@@ -32,10 +32,10 @@ Vue.component('my-cart', {
             this.$root.$emit('item', id);
         },
         onIncrease (item) {
-            this.changeQty(item, 1);
+            this.changeQuantity(item, 1);
         },
         onReduce (item) {
-            this.changeQty(item, -1);
+            this.changeQuantity(item, -1);
         },
         async onRemove (item) {
             await Jam.dialog.confirm('Remove this item from cart?');
@@ -61,11 +61,11 @@ Vue.component('my-cart', {
             }
         },
         formatItemsForOrder () {
-            return this.items.map(({id, qty}) => ({id, qty}));
+            return this.items.map(({id, quantity}) => ({id, quantity}));
         },
-        changeQty (item, delta) {
-            if (item.cartItem.changeQty(delta)) {
-                item.qty = item.cartItem.qty;
+        changeQuantity (item, delta) {
+            if (item.cartItem.changeQuantity(delta)) {
+                item.quantity = item.cartItem.quantity;
                 item.price = item.cartItem.getTotalPrice();
                 item.cartItem.cart.save();
             }
@@ -103,7 +103,7 @@ Vue.component('my-cart', {
                 name: item.name,
                 photo: this.getThumbnailUrl('photo', item.mainPhoto?._id, 'xs'),
                 price: item.price,
-                qty: item.cartItem.qty,
+                quantity: item.cartItem.quantity,
                 cartItem: item.cartItem
             };
         }

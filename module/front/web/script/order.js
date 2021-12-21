@@ -62,7 +62,7 @@ Vue.component('order', {
                 name: item.item?.name,
                 photo: this.getThumbnailUrl('photo', item.item?.mainPhoto, 'xs'),
                 price: item.price,
-                qty: item.quantity
+                quantity: item.quantity
             }));
         },
         getTotalPrice () {

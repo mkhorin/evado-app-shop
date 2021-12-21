@@ -26,10 +26,10 @@ module.exports = class CartOrderBehavior extends Base {
         }
         for (const item of items) {
             const source = itemMap[item.id];
-            if (!Number.isInteger(item.qty) || item.qty < 1) {
+            if (!Number.isInteger(item.quantity) || item.quantity < 1) {
                 return this.addItemError(`Invalid quantity: ${source.name}`);
             }
-            if (item.qty > source.inStock) {
+            if (item.quantity > source.inStock) {
                 return this.addItemError(`Invalid quantity: ${source.name}: In stock: ${source.inStock}`);
             }
         }
@@ -50,17 +50,20 @@ module.exports = class CartOrderBehavior extends Base {
 
     async createOrderItems (items) {
         if (Array.isArray(this._items)) {
-            const order = this.owner.getId();
-            const itemClass = this.getMetadataClass('orderItem');
-            for (const {id, qty} of this._items) {
-                const model = this.owner.createByView(itemClass);
-                model.assign({
-                    item: itemClass.key.normalize(id),
-                    quantity: qty,
-                    order
-                });
-                await model.insert();
+            for (const item of this._items) {
+                await this.createOrderItem(item);
             }
         }
+    }
+
+    createOrderItem (data) {
+        const itemClass = this.getMetadataClass('orderItem');
+        const model = this.owner.createByView(itemClass);
+        model.assign({
+            item: itemClass.key.normalize(data.id),
+            quantity: data.quantity,
+            order: this.owner.getId()
+        });
+        return model.insert();
     }
 };

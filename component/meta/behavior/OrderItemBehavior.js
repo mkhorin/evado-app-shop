@@ -18,9 +18,9 @@ module.exports = class OrderItemBehavior extends Base {
         if (!item || !item.get('active')) {
             return this.owner.addError('item', 'Active item required');
         }
-        const qty = this.get('quantity');
+        const quantity = this.get('quantity');
         const inStock = item.get('inStock');
-        if (qty < 1 || qty > inStock) {
+        if (quantity < 1 || quantity > inStock) {
             return this.owner.addError('quantity', 'Out of stock');
         }
     }
@@ -45,10 +45,10 @@ module.exports = class OrderItemBehavior extends Base {
     }
 
     async updateStock (sign) {
-        const qty = this.get('quantity');
+        const quantity = this.get('quantity');
         const item = await this.resolveItem();
         if (item) {
-            const inStock = item.get('inStock') - sign * qty;
+            const inStock = item.get('inStock') - sign * quantity;
             return item.findSelf().update({inStock});
         }
     }

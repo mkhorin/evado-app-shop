@@ -31,12 +31,12 @@ class Cart {
         return this.constructor.roundPrice(total);
     }
 
-    add (id, qty) {
+    add (id, quantity) {
         let item = this.getItem(id);
         if (item) {
-            item.qty += qty;
+            item.quantity += quantity;
         } else {
-            this.items.push(CartItem.create({id, qty}, this));
+            this.items.push(CartItem.create({id, quantity}, this));
         }
         return this.save();
     }

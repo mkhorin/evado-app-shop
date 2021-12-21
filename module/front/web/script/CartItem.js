@@ -4,27 +4,27 @@ class CartItem {
 
     static create (data, cart) {
         data = data || {};
-        return new this(data.id, data.qty, cart);
+        return new this(data.id, data.quantity, cart);
     }
 
-    constructor (id, qty, cart) {
+    constructor (id, quantity, cart) {
         this.id = id;
-        this.qty = qty;
+        this.quantity = quantity;
         this.price = 0;
         this.cart = cart;
     }
 
     getTotalPrice () {
-        return Cart.roundPrice(this.qty * this.price);
+        return Cart.roundPrice(this.quantity * this.price);
     }
 
-    changeQty (delta) {
-        const qty = this.qty + delta;
-        if (qty < 1 || (delta > 0 && qty > this.inStock)) {
+    changeQuantity (delta) {
+        const quantity = this.quantity + delta;
+        if (quantity < 1 || (delta > 0 && quantity > this.inStock)) {
             return false;
         }
-        this.qty = qty;
-        return qty;
+        this.quantity = quantity;
+        return quantity;
     }
 
     remove () {
@@ -34,15 +34,15 @@ class CartItem {
     serialize () {
         return {
             id: this.id,
-            qty: this.qty
+            quantity: this.quantity
         };
     }
 
     sync (data) {
         this.inStock = data.inStock;
         this.price = data.price;
-        if (this.qty > this.inStock) {
-            this.qty = this.inStock;
+        if (this.quantity > this.inStock) {
+            this.quantity = this.inStock;
         }
         data.cartItem = this;
     }
