@@ -14,26 +14,36 @@ module.exports = class CartOrderBehavior extends Base {
     }
 
     async validate () {
-        const items = this.get('items');
-        if (!Array.isArray(items) || !items.length) {
+        const targets = this.get('items');
+        if (!Array.isArray(targets) || !targets.length) {
             return this.addItemError('Invalid items');
         }
-        const ids = items.map(item => item.id);
-        const query = this.getMetadataClass('item').findById(ids);
-        const itemMap = await query.and({active: true}).raw().indexByKey().all();
-        if (Object.values(itemMap).length !== items.length) {
+        const ids = targets.map(item => item.id);
+        const itemMap = await this.getActiveItemMap(ids);
+        if (Object.values(itemMap).length !== targets.length) {
             return this.addItemError('Item not found');
         }
-        for (const item of items) {
-            const source = itemMap[item.id];
-            if (!Number.isInteger(item.quantity) || item.quantity < 1) {
-                return this.addItemError(`Invalid quantity: ${source.name}`);
-            }
-            if (item.quantity > source.inStock) {
-                return this.addItemError(`Invalid quantity: ${source.name}: In stock: ${source.inStock}`);
+        for (const target of targets) {
+            if (!this.validateTarget(target, itemMap[target.id])) {
+                return false;
             }
         }
-        this._items = items;
+        this._targets = targets;
+    }
+
+    getActiveItemMap (ids) {
+        const query = this.getMetadataClass('item').findById(ids);
+        return query.and({active: true}).raw().indexByKey().all();
+    }
+
+    validateTarget ({quantity}, {name, inStock}) {
+        if (!Number.isInteger(quantity) || quantity < 1) {
+            return this.addItemError(`Invalid quantity: ${name}`);
+        }
+        if (quantity > inStock) {
+            return this.addItemError(`Out of stock: ${name}: In stock: ${inStock}`);
+        }
+        return true;
     }
 
     addItemError (message) {
@@ -48,10 +58,10 @@ module.exports = class CartOrderBehavior extends Base {
         await this.createOrderItems();
     }
 
-    async createOrderItems (items) {
-        if (Array.isArray(this._items)) {
-            for (const item of this._items) {
-                await this.createOrderItem(item);
+    async createOrderItems () {
+        if (Array.isArray(this._targets)) {
+            for (const target of this._targets) {
+                await this.createOrderItem(target);
             }
         }
     }

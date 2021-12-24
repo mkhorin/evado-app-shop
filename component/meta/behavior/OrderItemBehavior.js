@@ -18,11 +18,15 @@ module.exports = class OrderItemBehavior extends Base {
         if (!item || !item.get('active')) {
             return this.owner.addError('item', 'Active item required');
         }
-        const quantity = this.get('quantity');
+        const quantity = this.getQuantity();
         const inStock = item.get('inStock');
         if (quantity < 1 || quantity > inStock) {
             return this.owner.addError('quantity', 'Out of stock');
         }
+    }
+
+    getQuantity () {
+        return this.get('quantity');
     }
 
     resolveItem () {
@@ -31,24 +35,23 @@ module.exports = class OrderItemBehavior extends Base {
 
     async beforeInsert () {
         await this.setPrice();
-        await this.updateStock(1);
+        await this.updateStock(-this.getQuantity());
     }
 
     afterDelete () {
-        return this.updateStock(-1);
+        return this.updateStock(this.getQuantity());
     }
 
     async setPrice () {
         const item = await this.resolveItem();
-        const price = MathHelper.round(item.get('price') * this.get('quantity'), 2);
+        const price = MathHelper.round(item.get('price') * this.getQuantity(), 2);
         this.owner.set('price', price);
     }
 
-    async updateStock (sign) {
-        const quantity = this.get('quantity');
+    async updateStock (delta) {
         const item = await this.resolveItem();
         if (item) {
-            const inStock = item.get('inStock') - sign * quantity;
+            const inStock = item.get('inStock') + delta;
             return item.findSelf().update({inStock});
         }
     }
