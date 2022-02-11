@@ -12,7 +12,8 @@
     {
       "name": "orders",
       "label": "Orders",
-      "orderNumber": 10
+      "orderNumber": 10,
+      "type": "container"
     },
     {
       "parent": "images",
@@ -31,7 +32,8 @@
     {
       "name": "items",
       "label": "Items",
-      "orderNumber": 20
+      "orderNumber": 20,
+      "type": "container"
     },
     {
       "parent": "images",
@@ -59,7 +61,8 @@
       "name": "categories",
       "label": "Categories",
       "orderNumber": 30,
-      "class": "category"
+      "class": "category",
+      "type": "container"
     },
     {
       "parent": "items",
@@ -71,7 +74,8 @@
     {
       "name": "images",
       "label": "Images",
-      "orderNumber": 40
+      "orderNumber": 40,
+      "type": "container"
     },
     {
       "parent": "items",
