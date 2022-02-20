@@ -96,7 +96,7 @@ Jam.I18n.meta = {
     'Shipped': 'Отправлен',
     'Shirt': 'Рубашка',
     'Shirts': 'Рубашки',
-    'Size': 'Размер',    
+    'Size': 'Размер',
 
     'Total price': 'Общая цена',
 

@@ -3,7 +3,7 @@
 const Base = require('evado/Application');
 
 module.exports = class ShopApplication extends Base {
-    
+
     constructor (config) {
         super({
             original: Base,
