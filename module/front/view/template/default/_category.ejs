@@ -1,48 +1,48 @@
 <template id="category">
-    <div class="page">
-        <div class="loadable-container">
-            <template v-if="!loading && id">
+  <div class="page">
+    <div class="loadable-container">
+      <template v-if="!loading && id">
 
-                <breadcrumbs :cart="cart">
-                    <template #path>
-                        <li class="breadcrumb-item">
-                            <a @click.prevent="toMain" href="#" data-t="">Main</a>
-                        </li>
-                        <li v-if="parent" class="breadcrumb-item">
-                            <a @click.prevent="onCategory(parent)" href="#" data-t="">Parent category</a>
-                        </li>
-                        <li class="breadcrumb-item" data-t="">{{name}}</li>
-                    </template>
-                </breadcrumbs>
+        <breadcrumbs :cart="cart">
+          <template #path>
+            <li class="breadcrumb-item">
+              <a @click.prevent="toMain" href="#" data-t="">Main</a>
+            </li>
+            <li v-if="parent" class="breadcrumb-item">
+              <a @click.prevent="onCategory(parent)" href="#" data-t="">Parent category</a>
+            </li>
+            <li class="breadcrumb-item" data-t="">{{name}}</li>
+          </template>
+        </breadcrumbs>
 
-                <h1>
-                    <span data-t="">{{name}}</span>
-                    <span data-t="">category</span>
-                </h1>
+        <h1>
+          <span data-t="">{{name}}</span>
+          <span data-t="">category</span>
+        </h1>
 
-                <h4 class="subtitle">{{description}}</h4>
+        <h4 class="subtitle">{{description}}</h4>
 
-                <div v-if="children.length" class="subcategories">
-                    <h3 data-t="">Subcategories</h3>
-                    <div class="row">
-                        <div v-for="item of children" class="col-md-3 col-lg-2">
-                            <div class="category-card">
-                                <a @click.prevent="onCategory(item.id)" href="#">
-                                    <img :src="item.icon" class="img-thumbnail img-fluid" alt="">
-                                </a>
-                                <h4><a @click.prevent="onCategory(item.id)" href="#">{{item.name}}</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <items :category="category" :categories="descendants"></items>
-
-            </template>
-
-            <div v-show="loading" class="loader">
-                <i class="fa fa-spinner fa-spin"></i>
+        <div v-if="children.length" class="subcategories">
+          <h3 data-t="">Subcategories</h3>
+          <div class="row">
+            <div v-for="item of children" class="col-md-3 col-lg-2">
+              <div class="category-card">
+                <a @click.prevent="onCategory(item.id)" href="#">
+                  <img :src="item.icon" class="img-thumbnail img-fluid" alt="">
+                </a>
+                <h4><a @click.prevent="onCategory(item.id)" href="#">{{item.name}}</a></h4>
+              </div>
             </div>
+          </div>
         </div>
+
+        <items :category="category" :categories="descendants"></items>
+
+      </template>
+
+      <div v-show="loading" class="loader">
+        <i class="fa fa-spinner fa-spin"></i>
+      </div>
     </div>
+  </div>
 </template>

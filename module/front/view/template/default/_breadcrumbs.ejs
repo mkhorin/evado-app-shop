@@ -1,24 +1,24 @@
 <template id="breadcrumbs">
-    <div class="page-head">
-        <ol class="breadcrumb">
+  <div class="page-head">
+    <ol class="breadcrumb">
 
-            <slot name="path">
-                <li class="breadcrumb-item" data-t="">Main</li>
-            </slot>
+      <slot name="path">
+        <li class="breadcrumb-item" data-t="">Main</li>
+      </slot>
 
-            <li class="ms-auto">
-                <template v-if="cart">
-                    <div @click="onMyCart" :class="{'has-item': cart.count(), 'cart-toggle': true}" title="Cart">
-                        <span class="icon fa fa-shopping-cart"></span>
-                        {{cart.count()}}
-                        <span data-t="">item(s)</span>
-                    </div>
-                </template>
-                <div @click="toOrders" class="user-toggle" title="Orders">
-                    <span class="icon fa fa-user"></span>
-                    <span data-t="">Orders</span>
-                </div>
-            </li>
-        </ol>
-    </div>
+      <li class="ms-auto">
+        <template v-if="cart">
+          <div @click="onMyCart" :class="{'has-item': cart.count(), 'cart-toggle': true}" title="Cart">
+            <span class="icon fa fa-shopping-cart"></span>
+            {{cart.count()}}
+            <span data-t="">item(s)</span>
+          </div>
+        </template>
+        <div @click="toOrders" class="user-toggle" title="Orders">
+          <span class="icon fa fa-user"></span>
+          <span data-t="">Orders</span>
+        </div>
+      </li>
+    </ol>
+  </div>
 </template>

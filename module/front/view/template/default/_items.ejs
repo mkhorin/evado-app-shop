@@ -1,33 +1,33 @@
 <template id="items">
-    <div class="item-list loadable-container">
-        <h3 data-t="">Items</h3>
+  <div class="item-list loadable-container">
+    <h3 data-t="">Items</h3>
 
-        <search @search="onSearch"></search>
+    <search @search="onSearch"></search>
 
-        <div class="row">
-            <div v-for="item of items" class="col-md-4 col-lg-3">
-                <div class="item-card">
-                    <a v-if="item.photo" @click.prevent="onItem(item.id)" href="#">
-                        <img :src="item.photo" :alt="item.name" class="img-thumbnail img-fluid">
-                    </a>
-                    <h4><a @click.prevent="onItem(item.id)" href="#">{{item.name}}</a></h4>
-                    <div class="price">
-                        <span data-t="">Price</span>:
-                        <b>{{item.price}}</b>
-                    </div>
-                    <div class="brief">{{item.brief}}</div>
-                </div>
-            </div>
+    <div class="row">
+      <div v-for="item of items" class="col-md-4 col-lg-3">
+        <div class="item-card">
+          <a v-if="item.photo" @click.prevent="onItem(item.id)" href="#">
+            <img :src="item.photo" :alt="item.name" class="img-thumbnail img-fluid">
+          </a>
+          <h4><a @click.prevent="onItem(item.id)" href="#">{{item.name}}</a></h4>
+          <div class="price">
+            <span data-t="">Price</span>:
+            <b>{{item.price}}</b>
+          </div>
+          <div class="brief">{{item.brief}}</div>
         </div>
-
-        <pagination @change="load"></pagination>
-
-        <div v-show="!loading && empty" class="alert-warning alert">
-            <span data-t="">No items found</span>
-        </div>
-
-        <div v-show="loading" class="loader">
-            <i class="fa fa-spinner fa-spin"></i>
-        </div>
+      </div>
     </div>
+
+    <pagination @change="load"></pagination>
+
+    <div v-show="!loading && empty" class="alert-warning alert">
+      <span data-t="">No items found</span>
+    </div>
+
+    <div v-show="loading" class="loader">
+      <i class="fa fa-spinner fa-spin"></i>
+    </div>
+  </div>
 </template>
