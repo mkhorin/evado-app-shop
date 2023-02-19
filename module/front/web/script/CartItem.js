@@ -20,7 +20,10 @@ class CartItem {
 
     changeQuantity (delta) {
         const quantity = this.quantity + delta;
-        if (quantity < 1 || (delta > 0 && quantity > this.inStock)) {
+        if (quantity < 1) {
+            return false;
+        }
+        if (quantity > this.inStock && delta > 0) {
             return false;
         }
         this.quantity = quantity;

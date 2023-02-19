@@ -33,7 +33,8 @@ module.exports = class CartOrderBehavior extends Base {
 
     getActiveItemMap (ids) {
         const query = this.getMetadataClass('item').findById(ids);
-        return query.and({active: true}).raw().indexByKey().all();
+        query.and({active: true}).raw().indexByKey();
+        return query.all();
     }
 
     validateTarget ({quantity}, {name, inStock}) {

@@ -44,15 +44,18 @@ module.exports = class OrderItemBehavior extends Base {
 
     async setPrice () {
         const item = await this.resolveItem();
-        const price = MathHelper.round(item.get('price') * this.getQuantity(), 2);
-        this.owner.set('price', price);
+        const quantity = this.getQuantity();
+        const price = item.get('price');
+        const result = MathHelper.round(price * quantity, 2);
+        this.owner.set('price', result);
     }
 
     async updateStock (delta) {
         const item = await this.resolveItem();
         if (item) {
             const inStock = item.get('inStock') + delta;
-            return item.findSelf().update({inStock});
+            const query = item.findSelf();
+            return query.update({inStock});
         }
     }
 };

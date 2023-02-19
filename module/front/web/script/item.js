@@ -99,9 +99,12 @@ Vue.component('item', {
             }));
         },
         formatOptionValues ({name}, data) {
-            let values = this.variants.map(data => this.getDataValue(name, data)).filter(value => value);
+            let values = this.variants
+                .map(data => this.getDataValue(name, data))
+                .filter(v => v);
             values = Jam.ArrayHelper.unique(values);
-            this.$set(this.optionValues, name, values.length === 1 ? values[0] : null);
+            const value = values.length === 1 ? values[0] : null;
+            this.$set(this.optionValues, name, value);
             return values;
         },
         getDataValue (name, data) {
