@@ -35,14 +35,14 @@ Vue.component('items', {
             await this.load(0);
         },
         async load (page) {
+            const {pageSize} = this;
             const data = await this.fetchJson('list', {
                 class: 'item',
                 view: 'publicList',
-                length: this.pageSize,
-                start: page * this.pageSize,
+                length: pageSize,
+                start: page * pageSize,
                 filter: this.getFilter()
             });
-            const pageSize = this.pageSize;
             this.$emit('load', {...data, pageSize, page});
         },
         getFilter () {
